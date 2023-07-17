@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+  color: #f0f0f0;
+}
+.header.active {
+  transform: translate(-50%, -50%);
+  top: 45px;
+  left: 50%;
+}
+
+/* .home {
+  background-image: url("background.jpg");
+  background-size: cover;
+
+} */
