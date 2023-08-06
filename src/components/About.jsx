@@ -20,11 +20,11 @@ const About = () => {
     { image: "/src/assets/portfolio-pngs/git.png", text: "Git" },
   ];
   return (
-    <div className="md:px-10 px-7 pt-16 sm:-mt-24" id="about">
+    <div className="md:px-10 px-7 pt-14 sm:-mt-24" id="about">
       <h1 className="text-[#1B99F7] font-semibold text-2xl mt-5">About me</h1>
       <p className="my-3 text-white text-sm md:w-2/3 leading-[27px]">
         Hi, my name is Faithful Eromosele, I am a Fullstack web developer and UI
-        designer. I have honed my skills in Web Development and have core
+        designer. I have honed my skills in fullstack web development and have core
         understanding of advance UI design principles. <br />
         <p className="mt-5">
           I have used and still use a couple of tools and languages for my
@@ -48,7 +48,7 @@ const About = () => {
               <img
                 src={tech.image}
                 alt=""
-                className="p-4 h-[70px] grayscale hover:grayscale-0 cursor-pointer transition-all duration-500"
+                className="p-4 h-[70px] max-w-[70px] grayscale hover:grayscale-0 cursor-pointer transition-all duration-500"
               />
               <p className="ml-6 text-xs text-white">{tech.text}</p>
             </div>
@@ -57,7 +57,7 @@ const About = () => {
         <div className="faithful my-10 flex justify-center">
           <div className="border-dashed border-2 border-primary rounded-xl p-2">
             <img
-              className="h-[300px] rounded cursor-pointer grayscale hover:grayscale-0 transition-all duration-300"
+              className="h-[300px] max-w-[300px] rounded cursor-pointer grayscale hover:grayscale-0 transition-all duration-300"
               src={faithful}
               alt=""
             />

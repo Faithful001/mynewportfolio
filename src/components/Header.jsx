@@ -30,12 +30,12 @@ const Header = () => {
       className={
         navbar
           ? "header active w-[90%] fixed bg-[#1b1b1b] rounded-full z-10 opacity-[0.96]"
-          : "header w-full mt-2 z-10"
+          : "header w-full mt-2 z-50"
       }
     >
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7 z-50">
         {/* logo section */}
-        <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
+        <div className="font-bold text-2xl cursor-pointer flex items-center gap-1 z-50">
           <span className="text-primary text-xl hover:text-white transition-all duration-300">
             Faithful Dev
           </span>

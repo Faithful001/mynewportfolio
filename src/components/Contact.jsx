@@ -20,19 +20,19 @@ const Contact = () => {
       {/* social icons */}
       <div className="flex mt-8">
         <a href="https://www.linkedin.com/in/joshua-harris-321a24190/" target="_blank" rel="noreferrer">
-          <img className="h-[25px] mr-5" src={github} alt="" />
+          <img className="h-[22px] mr-5" src={github} alt="" />
         </a>
         <a className="ml-4" href="https://github.com/joshua-harris" target="_blank" rel="noreferrer">
-        <img className="h-[25px] mr-5" src={facebook} alt="" />
+        <img className="h-[22px] mr-5" src={facebook} alt="" />
         </a>
         <a className="ml-4" href="mailto:anpch@example.com" target="_blank" rel="noreferrer">
-        <img className="h-[25px] mr-5" src={twitter} alt="" />
+        <img className="h-[22px] mr-5" src={twitter} alt="" />
         </a>
         <a className="ml-4" href="mailto:anpch@example.com" target="_blank" rel="noreferrer">
-        <img className="h-[25px] mr-5" src={instagram} alt="" />
+        <img className="h-[22px] mr-5" src={instagram} alt="" />
         </a>
         <a className="ml-4" href="mailto:anpch@example.com" target="_blank" rel="noreferrer">
-        <img className="h-[25px] mr-5" src={linkedin} alt="" />
+        <img className="h-[22px] mr-5" src={linkedin} alt="" />
         </a>
       </div>
         </div>

@@ -13,8 +13,34 @@ body {
   left: 50%;
 }
 
-/* .home {
-  background-image: url("background.jpg");
-  background-size: cover;
+/* .home{
+  margin-top: 3rem;
+} */
 
+@media (min-width: 768px) and (max-width: 991px) {
+  /* img.emoji{
+    height: 200px;
+  } */
+
+  .home{
+    margin-top: 0rem;
+  }
+
+  div.home-sub{
+    padding-bottom: 350px;
+    /* padding: 0px; */
+  }
+
+}
+
+/* img.image {
+  opacity: 0.2;
+}
+
+span:hover > img.image {
+  opacity: 1;
+}
+
+span:hover {
+  cursor: pointer;
 } */
