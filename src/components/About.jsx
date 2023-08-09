@@ -20,7 +20,7 @@ const About = () => {
     { image: "/src/assets/portfolio-pngs/git.png", text: "Git" },
   ];
   return (
-    <div className="md:px-10 px-7 pt-14 sm:-mt-24" id="about">
+    <div className="md:px-10 px-7 pt-10 sm:-mt-24" id="about">
       <h1 className="text-[#1B99F7] font-semibold text-2xl mt-5">About me</h1>
       <p className="my-3 text-white text-sm md:w-2/3 leading-[27px]">
         Hi, my name is Faithful Eromosele, I am a Fullstack web developer and UI

@@ -8,11 +8,11 @@ import emoji from "../assets/memoji1.png"
 const Home = () => {
   return (
     <div
-      className="home md:px-10 px-7 -mt-5 md:h-screen flex items-center justify-center"
+      className="home relative md:bottom-20 bottom-[20px] md:px-10 px-7 md:h-screen flex flex-col md:flex-row items-center justify-center"
       id="home"
     >
       {/* <div className="section "> */}
-        <div className="flex flex-col md:flex-row items-center justify-between w-full">
+        <div className="section flex flex-col md:flex-row items-center justify-between w-full">
           {/* image & content */}
           {/* text */}
           <div className="text-white">
@@ -32,8 +32,8 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <img className="md:h-96 md:max-w-[384px] h-72 max-w-[288px]" src={emoji} alt="" />
         </div>
+          <img className="md:h-96 md:max-w-[384px] h-72 max-w-[288px]" src={emoji} alt="" />
       {/* </div> */}
     </div>
   );

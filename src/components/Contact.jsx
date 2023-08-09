@@ -7,7 +7,7 @@ import linkedin from '../assets/socialss/linkedin.png';
 
 const Contact = () => {
   return (
-    <div className="md:px-10 px-7 my-10" id="contact">
+    <div className="md:px-10 px-5 my-10" id="contact">
       <div className="flex flex-col md:flex-row">
         {/* text and icons */}
         <div className="md:w-1/2">

@@ -26,7 +26,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="md:px-10 px-7 my-8 pt-5" id="projects">
+    <div className="md:px-10 px-7 my-5 pt-5" id="projects">
       <h1 className="text-[#1B99F7] font-semibold text-2xl mt-16">
         Featured Projects
       </h1>
@@ -35,6 +35,7 @@ const Projects = () => {
         here are a few of my live, real-world projects
       </p>
       {/* featured projects */}
+
       {/* project 1 */}
       <div className="wrapper mt-16">
         <span className="group flex justify-center items-center mb-20 hover:cursor-pointer">
@@ -49,12 +50,12 @@ const Projects = () => {
             </p>
           </div>
           <div className="">
-            <div className="relative">
-              <a href="#">
+            <div className="">
+              <a href="#" >
                 <img
                   src="/src/assets/projects/finance_tracker.png"
                   alt=""
-                  className="h-[300px] md:opacity-70 opacity-30 -mt-5 rounded-lg group-hover:opacity-100 transition-all duration-500"
+                  className="h-[300px] max-w-[800px] md:opacity-70 opacity-30 -mt-5 rounded-lg group-hover:opacity-100 transition-all duration-500"
                 />
               </a>
             </div>
