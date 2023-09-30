@@ -20,7 +20,7 @@ const Contact = () => {
 					{/* social icons */}
 					<div className="flex mt-8">
 						<a
-							href="https://www.linkedin.com/in/joshua-harris-321a24190/"
+							href="https://github.com/Faithful001"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -28,7 +28,7 @@ const Contact = () => {
 						</a>
 						<a
 							className="ml-4"
-							href="https://github.com/joshua-harris"
+							href="https://web.facebook.com/profile.php?id=100049869877529"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -36,7 +36,7 @@ const Contact = () => {
 						</a>
 						<a
 							className="ml-4"
-							href="mailto:anpch@example.com"
+							href="https://twitter.com/faithfultheking"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -44,15 +44,7 @@ const Contact = () => {
 						</a>
 						<a
 							className="ml-4"
-							href="mailto:anpch@example.com"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<img className="h-[22px] mr-5" src={instagram} alt="" />
-						</a>
-						<a
-							className="ml-4"
-							href="mailto:anpch@example.com"
+							href="www.linkedin.com/in/faithful-eromosele"
 							target="_blank"
 							rel="noreferrer"
 						>
