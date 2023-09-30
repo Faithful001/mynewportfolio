@@ -13,7 +13,7 @@ const Projects = () => {
 				"A fullstack webapp that helps you keep record of your transactions",
 			technologies:
 				"React JS, Node JS, Express JS, Mongo DB, Context API, REST API",
-			live_url: "finance-tracker-app1.netlify.app",
+			live_url: "https://finance-tracker-app1.netlify.app",
 			github_url: "https://github.com/Faithful001/finance-tracker-app",
 			photo: financetracker,
 		},
