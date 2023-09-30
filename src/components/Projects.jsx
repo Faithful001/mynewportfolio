@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import github from "../assets/socialss/github.png";
+import financetracker from "../assets/projects/finance_tracker.png";
+import diktion from "../assets/projects/diktion.png";
+import workoutbuddy from "../assets/projects/img2.png";
 
 const Projects = () => {
 	const projects = [
@@ -12,7 +15,7 @@ const Projects = () => {
 				"React JS, Node JS, Express JS, Mongo DB, Context API, REST API",
 			live_url: "finance-tracker-app1.netlify.app",
 			github_url: "https://github.com/Faithful001/finance-tracker-app",
-			photo: "/src/assets/projects/finance_tracker.png",
+			photo: financetracker,
 		},
 		{
 			title: "DIKTION",
@@ -21,7 +24,7 @@ const Projects = () => {
 			technologies: "React JS, Typescript, Context API, REST API",
 			live_url: "https://diktion.vercel.app/",
 			github_url: "https://github.com/Faithful001/diktion",
-			photo: "/src/assets/projects/diktion.png",
+			photo: diktion,
 		},
 		{
 			title: "WORKOUT BUDDY",
@@ -31,7 +34,7 @@ const Projects = () => {
 				"React JS, Node JS, Express JS, Mongo DB, Context API, REST API",
 			live_url: "",
 			github_url: "https://github.com/Faithful001/workout-app",
-			photo: "/src/assets/projects/img2.png",
+			photo: workoutbuddy,
 		},
 	];
 	return (
