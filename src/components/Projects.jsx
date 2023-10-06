@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import github from "../assets/socialss/github.png";
 import financetracker from "../assets/projects/finance_tracker.png";
 import diktion from "../assets/projects/diktion.png";
 import workoutbuddy from "../assets/projects/img2.png";
+import saler from "../assets/projects/saler.png";
 
 const Projects = () => {
 	const projects = [
@@ -16,6 +16,14 @@ const Projects = () => {
 			live_url: "https://finance-tracker-app1.netlify.app",
 			github_url: "https://github.com/Faithful001/finance-tracker-app",
 			photo: financetracker,
+		},
+		{
+			title: "SALER APP LANDING PAGE",
+			description: "Built the landing page for the saler app",
+			technologies: "React JS, Tailwind",
+			live_url: "https://saler-app.vercel.app/",
+			github_url: "https://github.com/Faithful001/saler-landing_page",
+			photo: saler,
 		},
 		{
 			title: "DIKTION",
