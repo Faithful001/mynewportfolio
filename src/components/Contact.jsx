@@ -1,4 +1,5 @@
-import React from "react";
+import { React, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import github from "../assets/socialss/github.png";
 import facebook from "../assets/socialss/facebook.png";
 import twitter from "../assets/socialss/twitter.png";
@@ -6,6 +7,35 @@ import instagram from "../assets/socialss/instagram.png";
 import linkedin from "../assets/socialss/linkedin.png";
 
 const Contact = () => {
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [message, setMessage] = useState("");
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs
+			.sendForm(
+				"service_4m537wy",
+				"template_sdjfdga",
+				form.current,
+				"ba9oJemctLCFFL7ko"
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+					setName("");
+					setEmail("");
+					setMessage("");
+					alert("Message sent successfully");
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+	};
+
 	return (
 		<div className="md:px-10 px-5 my-10" id="contact">
 			<div className="flex flex-col md:flex-row">
@@ -57,18 +87,22 @@ const Contact = () => {
 					<p className="mt-16 text-white text-base mb-6">
 						Contact me, let's make magic together
 					</p>
-					<form>
+					<form ref={form} onSubmit={sendEmail}>
 						<input
 							type="text"
 							name="name"
 							placeholder="Name:"
 							className="bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded "
+							value={name}
+							onChange={(e) => setName(e.target.value)}
 						/>
 						<input
 							type="email"
 							name="email"
 							placeholder="Email:"
 							className="bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded my-3"
+							value={email}
+							onChange={(e) => setEmail(e.target.value)}
 						/>
 						<textarea
 							name="message"
@@ -77,6 +111,8 @@ const Contact = () => {
 							rows="4"
 							className="bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded mb-2"
 							placeholder="Message:"
+							value={message}
+							onChange={(e) => setMessage(e.target.value)}
 						></textarea>
 						<button className="btn transition-all duration-500 bg-primary py-2 px-12 rounded text-white hover:bg-white hover:text-primary block">
 							Send
@@ -89,3 +125,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+const sentModal = () => {};
