@@ -28,7 +28,7 @@ const Contact = () => {
 					setName("");
 					setEmail("");
 					setMessage("");
-					alert("Message sent successfully");
+					alert("Message sent successfully. I will get back to you shortly");
 				},
 				(error) => {
 					console.log(error.text);
