@@ -26,15 +26,6 @@ const Projects = () => {
 			photo: saler,
 		},
 		{
-			title: "DIKTION",
-			description:
-				"A dictionary app to search for your favourite words. Dare to search!",
-			technologies: "React JS, Typescript, Context API, REST API",
-			live_url: "https://diktion.vercel.app/",
-			github_url: "https://github.com/Faithful001/diktion",
-			photo: diktion,
-		},
-		{
 			title: "WORKOUT BUDDY",
 			description:
 				"A fullstack webapp that helps you keep record of your workout exercises",
@@ -43,6 +34,15 @@ const Projects = () => {
 			live_url: "https://work-o-buddy.vercel.app/",
 			github_url: "https://github.com/Faithful001/workout-app",
 			photo: workoutbuddy,
+		},
+		{
+			title: "DIKTION",
+			description:
+				"A dictionary app to search for your favourite words. Dare to search!",
+			technologies: "React JS, Typescript, Context API, REST API",
+			live_url: "https://diktion.vercel.app/",
+			github_url: "https://github.com/Faithful001/diktion",
+			photo: diktion,
 		},
 	];
 	return (
