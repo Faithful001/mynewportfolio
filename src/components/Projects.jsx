@@ -2,7 +2,7 @@ import React from "react";
 import github from "../assets/socialss/github.png";
 import financetracker from "../assets/projects/finance_tracker.png";
 import diktion from "../assets/projects/diktion.png";
-import workoutbuddy from "../assets/projects/img2.png";
+import workoutbuddy from "../assets/projects/workoutapp.png";
 import saler from "../assets/projects/saler.png";
 
 const Projects = () => {
@@ -37,10 +37,10 @@ const Projects = () => {
 		{
 			title: "WORKOUT BUDDY",
 			description:
-				"A fullstack webapp that helps you keep record of your workout tasks",
+				"A fullstack webapp that helps you keep record of your workout exercises",
 			technologies:
 				"React JS, Node JS, Express JS, Mongo DB, Context API, REST API",
-			live_url: "",
+			live_url: "https://work-o-buddy.vercel.app/",
 			github_url: "https://github.com/Faithful001/workout-app",
 			photo: workoutbuddy,
 		},
