@@ -19,7 +19,7 @@ const Projects = () => {
 		},
 		{
 			title: "SALER APP LANDING PAGE",
-			description: "Built the landing page for the saler app",
+			description: "Built the landing page of the saler app. Check it out!",
 			technologies: "React JS, Tailwind",
 			live_url: "https://saler-app.vercel.app/",
 			github_url: "https://github.com/Faithful001/saler-landing_page",
@@ -33,6 +33,14 @@ const Projects = () => {
 				"React JS, Node JS, Express JS, Mongo DB, Context API, REST API",
 			live_url: "https://work-o-buddy.vercel.app/",
 			github_url: "https://github.com/Faithful001/workout-app",
+			photo: workoutbuddy,
+		},
+		{
+			title: "VULUE LANDING PAGE",
+			description: "Built the landing page of the vulue app. Check it out!",
+			technologies: "React JS, Tailwind",
+			live_url: "https://vulue.vercel.app/",
+			github_url: "https://github.com/Faithful001/vulue_landing_page",
 			photo: workoutbuddy,
 		},
 		{
