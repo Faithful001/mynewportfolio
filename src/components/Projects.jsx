@@ -4,6 +4,7 @@ import financetracker from "../assets/projects/finance_tracker.png";
 import diktion from "../assets/projects/diktion.png";
 import workoutbuddy from "../assets/projects/workoutapp.png";
 import saler from "../assets/projects/saler.png";
+import vulue from "../assets/projects/vulue.png";
 
 const Projects = () => {
 	const projects = [
@@ -19,7 +20,8 @@ const Projects = () => {
 		},
 		{
 			title: "SALER APP LANDING PAGE",
-			description: "Built the landing page of the saler app. Check it out!",
+			description:
+				"Built the landing page of the saler app. You can check it out!",
 			technologies: "React JS, Tailwind",
 			live_url: "https://saler-app.vercel.app/",
 			github_url: "https://github.com/Faithful001/saler-landing_page",
@@ -37,11 +39,12 @@ const Projects = () => {
 		},
 		{
 			title: "VULUE LANDING PAGE",
-			description: "Built the landing page of the vulue app. Check it out!",
+			description:
+				"Built the landing page of the vulue app. You can check it out!",
 			technologies: "React JS, Tailwind",
 			live_url: "https://vulue.vercel.app/",
 			github_url: "https://github.com/Faithful001/vulue_landing_page",
-			photo: workoutbuddy,
+			photo: vulue,
 		},
 		{
 			title: "DIKTION",
