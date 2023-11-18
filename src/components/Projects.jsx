@@ -112,7 +112,7 @@ const Projects = () => {
 							<p className="mb-2 text-[14px]">{project.description}</p>
 							<a
 								href={project.live_url}
-								className="rounded-lg p-2 text-xs bg-[#1a1a1a] border-[1px] border-white text-white hover:bg-[#1B99F7] hover:text-white"
+								className="rounded-lg p-2 text-xs bg-[#1a1a1a] border-[1px] border-white text-white duration-300 hover:bg-[#1B99F7] hover:text-white"
 							>
 								View Project
 							</a>
