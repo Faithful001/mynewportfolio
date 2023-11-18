@@ -39,7 +39,7 @@ const About = () => {
 			<p className="my-3 text-white font-light text-sm md:w-2/3 leading-[27px]">
 				Hi, my name is Faithful Eromosele, I am a software developer. I have
 				honed my skills in software development and have core understanding of
-				advance UI design principles. <br />
+				advanced UI design principles. <br />
 				<p className="mt-5">
 					I have used and still use a couple of tools and languages for my
 					development process. I have listed a few of them below
