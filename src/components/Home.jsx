@@ -21,9 +21,9 @@ const Home = () => {
 						Faithful Eromosele
 					</h1>
 					<p className="max-w-xl opacity-80">
-						FullStack Software Developer & Problem Solver. I build deliberate
-						world-class software. My job is to give you a beautiful,
-						user-friendly, yet sophiticated product
+						Software Developer & Problem Solver. I build deliberate world-class
+						software. My job is to give you a beautiful, user-friendly, yet
+						sophiticated product
 					</p>
 					<div className="mt-5">
 						<a
@@ -47,4 +47,4 @@ const Home = () => {
 	);
 };
 
-export defa
+export default Home;

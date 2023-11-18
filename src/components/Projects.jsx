@@ -13,7 +13,7 @@ const Projects = () => {
 			title: "FINANCE TRACKER",
 			description:
 				"A fullstack webapp that helps you keep record of your transactions",
-			technologies: ["React JS", "TypeScript", "Node JS", "REST API"],
+			technologies: ["React JS", "Node JS", "Context API", "REST API"],
 			live_url: "https://finance-tracker-app1.netlify.app",
 			github_url: "https://github.com/Faithful001/finance-tracker-app",
 			photo: financetracker,
@@ -21,7 +21,7 @@ const Projects = () => {
 		{
 			title: "MEALSTAER",
 			description: "Your meal planning buddy. Organize your meals on the go.",
-			technologies: ["React JS", "Node JS", "Passport JS", "REST API"],
+			technologies: ["React JS", "TypeScript", "Node JS", "REST API"],
 			live_url: "https://mealstaer.vercel.app",
 			github_url: "https://github.com/Faithful001/mealstaer",
 			photo: mealstaer,
