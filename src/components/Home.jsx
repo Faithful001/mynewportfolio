@@ -21,18 +21,18 @@ const Home = () => {
 						Faithful Eromosele
 					</h1>
 					<p className="max-w-xl opacity-80">
-						FullStack Software Developer & Problem Solver. I create software
-						with world class functionalities. My job is to give you a beautiful,
+						FullStack Software Developer & Problem Solver. I build deliberate
+						world-class software. My job is to give you a beautiful,
 						user-friendly, yet sophiticated product
 					</p>
 					<div className="mt-5">
 						<a
-							href="my_latest_fullstack_resume_1_.pdf"
+							href="my_latest_fullstack_resume.pdf"
 							download
 							className="flex items-center justify-center w-28 transition-all duration-500 bg-[#000000] outline-none outline-offset-1 outline-[#1B99F7] py-2 px-7 rounded hover:bg-[#1b98f734] text-[#1B99F7] text-sm"
 						>
 							Resume
-							<span class="material-symbols-outlined">download</span>
+							<span className="material-symbols-outlined">download</span>
 						</a>
 					</div>
 				</div>
@@ -47,4 +47,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export defa

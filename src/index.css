@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
-  font-family: "Open Sans", sans-serif;
-  color: #f0f0f0;
+	background-color: black;
+	font-family: "Manrope", sans-serif;
+	color: #f0f0f0;
 }
 .header.active {
-  transform: translate(-50%, -50%);
-  top: 45px;
-  left: 50%;
+	transform: translate(-50%, -50%);
+	top: 45px;
+	left: 50%;
 }
 
 /* .home{
@@ -18,19 +18,18 @@ body {
 } */
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* img.emoji{
+	/* img.emoji{
     height: 200px;
   } */
 
-  .home{
-    margin-top: 0rem;
-  }
+	.home {
+		margin-top: 0rem;
+	}
 
-  div.home-sub{
-    padding-bottom: 350px;
-    /* padding: 0px; */
-  }
-
+	div.home-sub {
+		padding-bottom: 350px;
+		/* padding: 0px; */
+	}
 }
 
 /* img.image {
@@ -44,3 +43,10 @@ span:hover > img.image {
 span:hover {
   cursor: pointer;
 } */
+
+@media (max-width: 768) {
+	.project-image {
+		max-width: 30%;
+		width: 100vw;
+	}
+}

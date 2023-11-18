@@ -41,9 +41,7 @@ const Contact = () => {
 			<div className="flex flex-col md:flex-row">
 				{/* text and icons */}
 				<div className="md:w-1/2">
-					<h1 className="text-primary font-semibold text-2xl mt-16">
-						Get In Touch
-					</h1>
+					<h1 className="text-primary font-semibold text-2xl">Get In Touch</h1>
 					<p className="my-3 text-white md:w-3/4 leading-[2]">
 						{/* Satisfied with me? Please contact me */}
 					</p>
