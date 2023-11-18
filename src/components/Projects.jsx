@@ -77,8 +77,8 @@ const Projects = () => {
 				Featured Projects<span className={`animate-bounce`}>👨‍🍳</span>
 			</h1>
 			<p className="my-3 text-white text-sm md:w-3/4 leading-[27px]">
-				I have worked on many projects over the course of being a Web Developer,
-				here are a few of my live, real-world projects
+				I have worked on many projects over the course of being a software
+				developer, here are a few of my live, real-world projects
 			</p>
 			{/* featured projects */}
 
