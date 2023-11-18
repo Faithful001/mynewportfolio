@@ -3,7 +3,6 @@ import emailjs from "@emailjs/browser";
 import github from "../assets/socialss/github.png";
 import facebook from "../assets/socialss/facebook.png";
 import twitter from "../assets/socialss/twitter.png";
-import instagram from "../assets/socialss/instagram.png";
 import linkedin from "../assets/socialss/linkedin.png";
 
 const Contact = () => {
@@ -83,7 +82,7 @@ const Contact = () => {
 				{/* form */}
 				<div className="md:w-1/2">
 					<p className="mt-16 text-white text-base mb-6">
-						Contact me, let's make magic together
+						Contact me, let's make magic together ✨
 					</p>
 					<form ref={form} onSubmit={sendEmail}>
 						<input

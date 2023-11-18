@@ -33,11 +33,13 @@ const About = () => {
 	];
 	return (
 		<div className="md:px-10 px-7 pt-10 sm:-mt-24" id="about">
-			<h1 className="text-[#1B99F7] font-semibold text-2xl mt-5">About me</h1>
-			<p className="my-3 text-white text-sm md:w-2/3 leading-[27px]">
-				Hi, my name is Faithful Eromosele, I am a Fullstack web developer and UI
-				designer. I have honed my skills in fullstack web development and have
-				core understanding of advance UI design principles. <br />
+			<h1 className="text-[#1B99F7] font-semibold text-2xl mt-5">
+				About me<span className={`animate-bounce`}>🔥</span>
+			</h1>
+			<p className="my-3 text-white font-light text-sm md:w-2/3 leading-[27px]">
+				Hi, my name is Faithful Eromosele, I am a software developer. I have
+				honed my skills in software development and have core understanding of
+				advance UI design principles. <br />
 				<p className="mt-5">
 					I have used and still use a couple of tools and languages for my
 					development process. I have listed a few of them below

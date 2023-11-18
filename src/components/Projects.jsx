@@ -6,6 +6,7 @@ import workoutbuddy from "../assets/projects/workoutapp.png";
 import saler from "../assets/projects/saler.png";
 import vulue from "../assets/projects/vulue.png";
 import mealstaer from "../assets/projects/mealstaer.png";
+import { motion } from "framer-motion";
 
 const Projects = () => {
 	const projects = [
@@ -13,7 +14,7 @@ const Projects = () => {
 			title: "FINANCE TRACKER",
 			description:
 				"A fullstack webapp that helps you keep record of your transactions",
-			technologies: ["React JS", "Node JS", "Context API", "REST API"],
+			technologies: ["React JS", "Node JS", "REST API"],
 			live_url: "https://finance-tracker-app1.netlify.app",
 			github_url: "https://github.com/Faithful001/finance-tracker-app",
 			photo: financetracker,
@@ -21,7 +22,7 @@ const Projects = () => {
 		{
 			title: "MEALSTAER",
 			description: "Your meal planning buddy. Organize your meals on the go.",
-			technologies: ["React JS", "TypeScript", "Node JS", "REST API"],
+			technologies: ["React JS", "Node JS", "REST API"],
 			live_url: "https://mealstaer.vercel.app",
 			github_url: "https://github.com/Faithful001/mealstaer",
 			photo: mealstaer,
@@ -38,7 +39,7 @@ const Projects = () => {
 			title: "WORKOUT BUDDY",
 			description:
 				"A fullstack webapp that helps you keep record of your workout exercises",
-			technologies: ["React JS", "Node JS", "Context API", "REST API"],
+			technologies: ["React JS", "Node JS", "REST API"],
 			live_url: "https://work-o-buddy.vercel.app/",
 			github_url: "https://github.com/Faithful001/workout-app",
 			photo: workoutbuddy,
@@ -55,7 +56,7 @@ const Projects = () => {
 			title: "DIKTION",
 			description:
 				"A dictionary app to search for your favourite words. Dare to search!",
-			technologies: ["React JS", "Typescript", "Context API", "REST API"],
+			technologies: ["React JS", "Typescript", "REST API"],
 			live_url: "https://diktion.vercel.app/",
 			github_url: "https://github.com/Faithful001/diktion",
 			photo: diktion,
@@ -73,7 +74,7 @@ const Projects = () => {
 			id="projects"
 		>
 			<h1 className="text-[#1B99F7] font-semibold text-2xl mt-16">
-				Featured Projects
+				Featured Projects<span className={`animate-bounce`}>👨‍🍳</span>
 			</h1>
 			<p className="my-3 text-white text-sm md:w-3/4 leading-[27px]">
 				I have worked on many projects over the course of being a Web Developer,
@@ -94,7 +95,7 @@ const Projects = () => {
 						</div>
 						<div className="flex flex-col justify-center items-start">
 							<div className="gap-2 flex items-center mb-3 px-2">
-								<p className="font-bold text-xl">{project.title}</p>
+								<p className="font-medium text-xl">{project.title}</p>
 								<a href={project.github_url}>
 									<img className="h-6" src={github} alt="" />
 								</a>
@@ -109,7 +110,9 @@ const Projects = () => {
 									</div>
 								))}
 							</div>
-							<p className="mb-2 text-[14px]">{project.description}</p>
+							<p className="mb-2 font-extralight text-[14px]">
+								{project.description}
+							</p>
 							<a
 								href={project.live_url}
 								className="rounded-lg p-2 text-xs bg-[#1a1a1a] border-[1px] border-white text-white duration-300 hover:bg-[#1B99F7] hover:text-white"
