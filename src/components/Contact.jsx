@@ -9,11 +9,15 @@ const Contact = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
+	const [sendError, setSendError] = useState(""); //error message that will be rendered if the fields are empty
+
 	const form = useRef();
 
 	const sendEmail = (e) => {
 		e.preventDefault();
-
+		if (!name || !email || !message) {
+			setSendError("All fields are required");
+		}
 		emailjs
 			.sendForm(
 				"service_4m537wy",
@@ -27,10 +31,12 @@ const Contact = () => {
 					setName("");
 					setEmail("");
 					setMessage("");
+					sendError("");
 					alert("Message sent successfully. I will get back to you shortly");
 				},
 				(error) => {
 					console.log(error.text);
+					sendError(error.text);
 				}
 			);
 	};
@@ -118,6 +124,11 @@ const Contact = () => {
 							Send
 						</button>
 					</form>
+					{sendError && (
+						<div className="mt-3 text-red-700 text-sm md:w-3/4">
+							{sendError}
+						</div>
+					)}
 				</div>
 			</div>
 		</div>

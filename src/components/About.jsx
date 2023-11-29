@@ -6,7 +6,7 @@ import html from "../assets/portfolio-pngs/html.png";
 import css from "../assets/portfolio-pngs/css.png";
 import js from "../assets/portfolio-pngs/javascript.png";
 import jquery from "../assets/portfolio-pngs/jquery.png";
-import bootstrap from "../assets/portfolio-pngs/bootstrap.png";
+// import bootstrap from "../assets/portfolio-pngs/bootstrap.png";
 import react from "../assets/portfolio-pngs/reactjs.png";
 import tailwind from "../assets/portfolio-pngs/tailwind.png";
 import typescript from "../assets/portfolio-pngs/typescript.png";
@@ -14,6 +14,7 @@ import nodejs from "../assets/portfolio-pngs/nodejs.png";
 import python from "../assets/portfolio-pngs/python.png";
 import linux from "../assets/portfolio-pngs/linux.png";
 import git from "../assets/portfolio-pngs/git.png";
+import php from "../assets/portfolio-pngs/php.png";
 
 const About = () => {
 	const techs = [
@@ -21,13 +22,13 @@ const About = () => {
 		{ image: css, text: "CSS" },
 		{ image: js, text: "Javascript" },
 		{ image: jquery, text: "JQuery" },
-		{ image: bootstrap, text: "BootStrap" },
+		// { image: bootstrap, text: "BootStrap" },
 		{ image: react, text: "React" },
 		{ image: tailwind, text: "Tailwind" },
 		{ image: typescript, text: "TypeScript" },
 		{ image: nodejs, text: "Node JS" },
+		{ image: php, text: "PHP" },
 		{ image: python, text: "Python" },
-		// { image: "/src/assets/portfolio-pngs/php.png", text: "PHP" },
 		{ image: linux, text: "Linux" },
 		{ image: git, text: "Git" },
 	];
@@ -38,8 +39,10 @@ const About = () => {
 			</h1>
 			<p className="my-3 text-white font-light text-sm md:w-2/3 leading-[27px]">
 				Hi, my name is Faithful Eromosele, I am a software developer. I have
-				honed my skills in software development and have core understanding of
-				advanced UI design principles. <br />
+				honed my skills in software development, actively crafting
+				visually-appealing user-interfaces and building robust, scalable and
+				secure server-side solutions.
+				<br />
 				<p className="mt-5">
 					I have used and still use a couple of tools and languages for my
 					development process. I have listed a few of them below
@@ -62,7 +65,7 @@ const About = () => {
 							<img
 								src={tech.image}
 								alt=""
-								className="p-4 h-[70px] max-w-[70px] grayscale hover:grayscale-0 cursor-pointer transition-all duration-500"
+								className="p-4 h-[65px] max-w-[80px] grayscale hover:grayscale-0 cursor-pointer transition-all duration-500"
 							/>
 							<p className="ml-6 text-xs text-white">{tech.text}</p>
 						</div>
