@@ -82,7 +82,7 @@ const Contact = () => {
 						</a>
 						<a
 							className="ml-4"
-							href="www.linkedin.com/in/faithful-eromosele"
+							href="https://www.linkedin.com/in/faithful-eromosele/"
 							target="_blank"
 							rel="noreferrer"
 						>
