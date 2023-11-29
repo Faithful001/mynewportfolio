@@ -89,7 +89,8 @@ const Contact = () => {
 							type="text"
 							name="name"
 							placeholder="Name:"
-							className="bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded "
+							className="bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded"
+							required
 							value={name}
 							onChange={(e) => setName(e.target.value)}
 						/>
@@ -98,6 +99,7 @@ const Contact = () => {
 							name="email"
 							placeholder="Email:"
 							className="bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded my-3"
+							required
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
 						/>
@@ -107,6 +109,7 @@ const Contact = () => {
 							cols="54"
 							rows="4"
 							className="bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded mb-2"
+							required
 							placeholder="Message:"
 							value={message}
 							onChange={(e) => setMessage(e.target.value)}
