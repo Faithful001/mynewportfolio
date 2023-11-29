@@ -1,4 +1,4 @@
-import { React, useRef, useState } from "react";
+import { React, useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import github from "../assets/socialss/github.png";
 import facebook from "../assets/socialss/facebook.png";
@@ -11,6 +11,11 @@ const Contact = () => {
 	const [message, setMessage] = useState("");
 	const [sendError, setSendError] = useState(""); //error message that will be rendered if the fields are empty
 
+	// useEffect(() => {
+	// 	if (!name || !email || !message) {
+	// 		setSendError("All fields are required");
+	// 	}
+	// }, [name, email, message]);
 	const form = useRef();
 
 	const sendEmail = (e) => {
