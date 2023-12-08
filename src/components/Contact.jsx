@@ -1,4 +1,7 @@
 import { React, useEffect, useRef, useState } from "react";
+import { useMutation, QueryClient } from "react-query";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import github from "../assets/socialss/github.png";
 import facebook from "../assets/socialss/facebook.png";
@@ -9,8 +12,9 @@ const Contact = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
-	const [sendError, setSendError] = useState(""); //error message that will be rendered if the fields are empty
+	const [sendError, setSendError] = useState(""); //error message that will be rendered if the fields are empty or any other types of errors, including network errors
 
+	const queryClient = new QueryClient();
 	// useEffect(() => {
 	// 	if (!name || !email || !message) {
 	// 		setSendError("All fields are required");
@@ -18,8 +22,7 @@ const Contact = () => {
 	// }, [name, email, message]);
 	const form = useRef();
 
-	const sendEmail = (e) => {
-		e.preventDefault();
+	const sendEmail = () => {
 		if (!name || !email || !message) {
 			setSendError("All fields are required");
 		}
@@ -33,17 +36,40 @@ const Contact = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
-					setName("");
-					setEmail("");
+					// setName("");
+					// setEmail("");
 					setMessage("");
-					sendError("");
-					alert("Message sent successfully. I will get back to you shortly");
+					setSendError("");
+					toast("Message sent successfully. I will get back to you shortly");
 				},
 				(error) => {
-					console.log(error.text);
-					sendError(error.text);
+					console.log(
+						error.text.length > 0
+							? error.text
+							: "Check your internet connection"
+					);
+					setSendError(
+						error.text.length > 0
+							? error.text
+							: "Check your internet connection"
+					);
 				}
 			);
+	};
+
+	const { mutate, isLoading } = useMutation(sendEmail, {
+		onError: (error) => {
+			console.error(error);
+		},
+		onSuccess: () => {
+			queryClient.invalidateQueries("sending email");
+		},
+	});
+	console.log(isLoading);
+
+	const handleSendEmail = (e) => {
+		e.preventDefault();
+		mutate();
 	};
 
 	return (
@@ -52,6 +78,7 @@ const Contact = () => {
 				{/* text and icons */}
 				<div className="md:w-1/2">
 					<h1 className="text-primary font-semibold text-2xl">Get In Touch</h1>
+					<ToastContainer />
 					<p className="my-3 text-white md:w-3/4 leading-[2]">
 						{/* Satisfied with me? Please contact me */}
 					</p>
@@ -95,7 +122,7 @@ const Contact = () => {
 					<p className="mt-16 text-white text-base mb-6">
 						Contact me, let's make magic together ✨
 					</p>
-					<form ref={form} onSubmit={sendEmail}>
+					<form ref={form} onSubmit={handleSendEmail}>
 						<input
 							type="text"
 							name="name"
@@ -126,7 +153,7 @@ const Contact = () => {
 							onChange={(e) => setMessage(e.target.value)}
 						></textarea>
 						<button className="btn transition-all duration-500 bg-primary py-2 px-12 rounded text-white hover:bg-white hover:text-primary block">
-							Send
+							{isLoading ? "Sending..." : "Send"}
 						</button>
 					</form>
 					{sendError && (
@@ -141,5 +168,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-const sentModal = () => {};
