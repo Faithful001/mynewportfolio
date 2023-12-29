@@ -48,7 +48,7 @@ const Projects = () => {
 			title: "VULUE LANDING PAGE",
 			description: "Landing page of the vulue app.",
 			technologies: ["React JS", "Tailwind"],
-			live_url: "https://vulue.vercel.app/",
+			live_url: "https://vulue.org/",
 			github_url: "https://github.com/Faithful001/vulue_landing_page",
 			photo: vulue,
 		},
