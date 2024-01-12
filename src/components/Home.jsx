@@ -1,6 +1,6 @@
 import React from "react";
 import emoji from "../assets/memoji1.png";
-import my_resume from "./my_latest_fullstack_resume.pdf";
+import my_resume from "./fullstack_resume.pdf";
 
 const Home = () => {
 	return (
