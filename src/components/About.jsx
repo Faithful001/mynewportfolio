@@ -33,7 +33,7 @@ const About = () => {
 		{ image: git, text: "Git" },
 	];
 	return (
-		<div className="md:px-10 px-7 pt-10 sm:-mt-24" id="about">
+		<div className="md:px-10 px-7 pt-14 sm:-mt-24" id="about">
 			<h1 className="text-[#1B99F7] font-semibold text-2xl mt-5">
 				About me<span className={`animate-bounce`}>🔥</span>
 			</h1>
