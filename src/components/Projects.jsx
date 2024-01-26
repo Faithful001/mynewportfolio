@@ -7,8 +7,23 @@ import saler from "../assets/projects/saler.png";
 import vulue from "../assets/projects/vulue.png";
 import mealstaer from "../assets/projects/mealstaer.png";
 import bandage from "../assets/projects/bandage.png";
+import { useState } from "react";
 
 const Projects = () => {
+	const [showPrivate, setShowPrivate] = useState("");
+	// console.log(showPrivate);
+
+	function handleMouseEnter(project) {
+		setShowPrivate(`true ${project}`);
+	}
+	function handleMouseLeave(project) {
+		setShowPrivate(`false ${project}`);
+	}
+
+	function handleClick(e) {
+		e.preventDefault();
+		// Handle the click event logic here, if needed
+	}
 	const projects = [
 		{
 			title: "FINANCE TRACKER",
@@ -92,8 +107,8 @@ const Projects = () => {
 
 			{/* changeable */}
 			<div className="wrapper mt-8 flex flex-col items-center max-w-3xl">
-				{projects.map((project) => (
-					<span className="md:flex mb-12 gap-5 max-w-5xl" key={project.title}>
+				{projects.map((project, index) => (
+					<span className="md:flex mb-12 gap-5 max-w-5xl" key={index}>
 						<div className="mb-4 flex justify-center">
 							<img
 								className="project-image opacity-40 hover:opacity-80 transition-all duration-500 max-w-[480px] w-full rounded-lg"
@@ -101,10 +116,26 @@ const Projects = () => {
 								alt=""
 							/>
 						</div>
-						<div className="flex flex-col justify-center items-start">
+						<div className="relative flex flex-col justify-center items-start">
 							<div className="gap-2 flex items-center mb-3 px-2">
 								<p className="font-medium text-xl">{project.title}</p>
-								<a href={project.github_url}>
+								<p
+									className={`private absolute md:-top-2 -top-7 left-0 text-xs text-white transition-all duration-500 bg-[#99999960] p-1 px-2 rounded-lg ${
+										showPrivate == `true ${project.title}` ? "block" : "hidden"
+									}`}
+								>
+									This repository is private
+								</p>
+								<a
+									href={project.github_url}
+									onClick={(e) => project.github_url == "" && handleClick(e)}
+									onMouseEnter={() =>
+										project.github_url == "" && handleMouseEnter(project.title)
+									}
+									onMouseLeave={() =>
+										project.github_url == "" && handleMouseLeave(project.title)
+									}
+								>
 									<img className="h-6" src={github} alt="" />
 								</a>
 							</div>
