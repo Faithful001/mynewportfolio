@@ -6,7 +6,7 @@ import workoutbuddy from "../assets/projects/workoutapp.png";
 import saler from "../assets/projects/saler.png";
 import vulue from "../assets/projects/vulue.png";
 import mealstaer from "../assets/projects/mealstaer.png";
-import { motion } from "framer-motion";
+import bandage from "../assets/projects/bandage.png";
 
 const Projects = () => {
 	const projects = [
@@ -26,6 +26,14 @@ const Projects = () => {
 			live_url: "https://mealstaer.vercel.app",
 			github_url: "https://github.com/Faithful001/mealstaer",
 			photo: mealstaer,
+		},
+		{
+			title: "BANDAGE",
+			description: "Landing page project with add-to-cart functionality.",
+			technologies: ["Next JS", "Tailwind"],
+			live_url: "https://basket-ecommerce.vercel.app",
+			github_url: "",
+			photo: bandage,
 		},
 		{
 			title: "SALER APP LANDING PAGE",
