@@ -99,7 +99,7 @@ const Projects = () => {
 			<h1 className="text-[#1B99F7] font-semibold text-2xl mt-16">
 				Featured Projects<span className={`animate-bounce`}>👨‍🍳</span>
 			</h1>
-			<p className="my-3 text-white text-sm md:w-3/4 leading-[27px]">
+			<p className="my-3 text-white text-center text-sm md:w-3/4 leading-[27px]">
 				I have worked on many projects over the course of being a software
 				developer, here are a few of my live, real-world projects
 			</p>
