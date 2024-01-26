@@ -35,7 +35,7 @@ const Header = () => {
 		>
 			<div className="md:flex items-center justify-between py-4 md:px-10 px-7 z-50">
 				{/* logo section */}
-				<div className="flex items-center justify-between">
+				<div className="relative flex items-center justify-between">
 					<div className="font-bold text-2xl cursor-pointer flex items-center gap-1 z-50">
 						<Link
 							to={Links[0].link}
@@ -51,7 +51,7 @@ const Header = () => {
 					{/* Menu icon */}
 					<div
 						onClick={() => setOpen(!open)}
-						className="transition-transform duration-200 cursor-pointer md:hidden w-7 h-7 text-white"
+						className="transition-transform duration-200 absolute right-0 cursor-pointer md:hidden w-7 h-7 text-white"
 					>
 						{open ? <XMarkIcon /> : <Bars3BottomRightIcon />}
 					</div>
