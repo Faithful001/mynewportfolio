@@ -35,24 +35,26 @@ const Header = () => {
 		>
 			<div className="md:flex items-center justify-between py-4 md:px-10 px-7 z-50">
 				{/* logo section */}
-				<div className="font-bold text-2xl cursor-pointer flex items-center gap-1 z-50">
-					<Link
-						to={Links[0].link}
-						activeClass="active"
-						smooth={true}
-						spy={true}
+				<div className="flex items-center justify-between">
+					<div className="font-bold text-2xl cursor-pointer flex items-center gap-1 z-50">
+						<Link
+							to={Links[0].link}
+							activeClass="active"
+							smooth={true}
+							spy={true}
+						>
+							<span className="text-primary text-lg hover:text-white transition-all duration-300">
+								Faithful Dev
+							</span>
+						</Link>
+					</div>
+					{/* Menu icon */}
+					<div
+						onClick={() => setOpen(!open)}
+						className="transition-transform duration-200 cursor-pointer md:hidden w-7 h-7 text-white"
 					>
-						<span className="text-primary text-lg hover:text-white transition-all duration-300">
-							Faithful Dev
-						</span>
-					</Link>
-				</div>
-				{/* Menu icon */}
-				<div
-					onClick={() => setOpen(!open)}
-					className="transition-transform duration-200 absolute right-8 top-4 cursor-pointer md:hidden w-7 h-7 text-white"
-				>
-					{open ? <XMarkIcon /> : <Bars3BottomRightIcon />}
+						{open ? <XMarkIcon /> : <Bars3BottomRightIcon />}
+					</div>
 				</div>
 				{/* linke items */}
 				<ul
