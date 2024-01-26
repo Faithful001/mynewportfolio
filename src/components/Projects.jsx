@@ -120,8 +120,10 @@ const Projects = () => {
 							<div className="gap-2 flex items-center mb-3 px-2">
 								<p className="font-medium text-xl">{project.title}</p>
 								<p
-									className={`private absolute md:-top-2 -top-7 left-0 text-xs text-white transition-all duration-500 bg-[#3a3a3abd] p-1 px-2 rounded-lg ${
-										showPrivate == `true ${project.title}` ? "block" : "hidden"
+									className={`private absolute md:-top-2 -top-7 left-0 text-xs text-white opacity-0 transition-opacity duration-300 bg-[#3a3a3abd] p-1 px-2 rounded-lg ${
+										showPrivate === `true ${project.title}`
+											? "opacity-100"
+											: "opacity-0"
 									}`}
 								>
 									This repository is private
