@@ -35,7 +35,7 @@ const Header = () => {
 		>
 			<div className="md:flex items-center justify-between py-4 md:px-10 px-7 z-50">
 				{/* logo section */}
-				<div className="relative flex items-center justify-between">
+				<div className="relative flex items-center justify-between z-50">
 					<div className="font-bold text-2xl cursor-pointer flex items-center gap-1 z-50">
 						<Link
 							to={Links[0].link}

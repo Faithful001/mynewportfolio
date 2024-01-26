@@ -119,15 +119,18 @@ const Projects = () => {
 						<div className="relative flex flex-col justify-center items-start">
 							<div className="gap-2 flex items-center mb-3 px-2">
 								<p className="font-medium text-xl">{project.title}</p>
-								<p
-									className={`private absolute md:-top-2 -top-7 left-0 text-xs text-white opacity-0 transition-opacity duration-300 bg-[#3a3a3abd] p-1 px-2 rounded-lg ${
+								<div
+									className={`private absolute flex items-center justify-between md:-top-2 -top-7 left-0 text-xs text-white opacity-0 transition-opacity duration-300 bg-[#3a3a3abd] p-1 px-2 rounded-lg ${
 										showPrivate === `true ${project.title}`
 											? "opacity-100"
 											: "opacity-0"
 									}`}
 								>
-									This repository is private
-								</p>
+									<span className="material-symbols-outlined text-xs mr-1">
+										lock
+									</span>
+									<p>This repository is private</p>
+								</div>
 								<a
 									href={project.github_url}
 									onClick={(e) => project.github_url == "" && handleClick(e)}
