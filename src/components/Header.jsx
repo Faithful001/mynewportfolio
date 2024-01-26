@@ -35,7 +35,7 @@ const Header = () => {
 		>
 			<div className="md:flex items-center justify-between py-4 md:px-10 px-7 z-50">
 				{/* logo section */}
-				<div className="relative flex items-center justify-between z-50 bg-[#1b1b1b]">
+				<div className="relative flex items-center justify-between z-50">
 					<div className="font-bold text-2xl cursor-pointer flex items-center gap-1 z-50">
 						<Link
 							to={Links[0].link}
@@ -62,7 +62,7 @@ const Header = () => {
 				</div>
 				{/* link items | add sm:bg-transparent below if there is any transparency problem*/}
 				<ul
-					className={`md:flex md:items-center md:pb-0 absolute md:static z-10 left-0 w-full md:w-auto mt-4 md:mt-0 md:pl-0 pl-9 opacity-[0.98]  transition-all duration-500 ease-in ${
+					className={`md:flex md:items-center md:pb-0 absolute md:static z-10 left-0 w-full md:w-auto mt-4 md:mt-0 md:pl-0 pl-9 md:bg-transparent bg-[#1b1b1b] opacity-[0.98] transition-all duration-500 ease-in ${
 						open ? "top-12" : "top-[-490px]"
 					}`}
 				>
