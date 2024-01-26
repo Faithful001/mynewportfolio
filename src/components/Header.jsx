@@ -51,7 +51,7 @@ const Header = () => {
 					{/* Menu icon */}
 					<div
 						onClick={() => setOpen(!open)}
-						className="transition-transform duration-200 cursor-pointer md:hidden w-11 h-11 text-white"
+						className="transition-transform duration-200 absolute right-0 cursor-pointer md:hidden w-11 h-11 text-white"
 					>
 						{open ? (
 							<XMarkIcon className="p-2" />
