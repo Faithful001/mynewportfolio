@@ -92,17 +92,16 @@ const Projects = () => {
 
 	return (
 		// changeable
-		<div
-			className="md:px-10 px-7 my-5 pt-5 flex flex-col items-center"
-			id="projects"
-		>
-			<h1 className="text-[#1B99F7] font-semibold text-2xl mt-16">
-				Featured Projects<span className={`animate-bounce`}>👨‍🍳</span>
-			</h1>
-			<p className="my-3 text-white text-center text-sm md:w-3/4 leading-[27px]">
-				I have worked on many projects over the course of being a software
-				developer, here are a few of my live, real-world projects
-			</p>
+		<div className="md:px-10 px-7 my-5 pt-5 flex flex-col" id="projects">
+			<div className="flex flex-col">
+				<h1 className="text-[#1B99F7] font-semibold text-2xl mt-16">
+					Featured Projects<span className={`animate-bounce`}>👨‍🍳</span>
+				</h1>
+				<p className="my-3 text-white text-sm md:w-3/4 leading-[27px]">
+					I have worked on many projects over the course of being a software
+					developer, here are a few of my live, real-world projects
+				</p>
+			</div>
 			{/* featured projects */}
 
 			{/* changeable */}
