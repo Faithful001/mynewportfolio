@@ -151,7 +151,7 @@ const Contact = () => {
 							id="message"
 							cols="54"
 							rows="4"
-							className="bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded mb-2"
+							className="bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded mb-2 resize-none"
 							required
 							placeholder="Message:"
 							value={message}
