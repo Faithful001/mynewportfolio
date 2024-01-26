@@ -13,6 +13,7 @@ const Contact = () => {
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
 	const [sendError, setSendError] = useState(""); //error message that will be rendered if the fields are empty or any other types of errors, including network errors
+	const [isLoading, setIsLoading] = useState(false);
 
 	const queryClient = new QueryClient();
 	// useEffect(() => {
@@ -22,7 +23,9 @@ const Contact = () => {
 	// }, [name, email, message]);
 	const form = useRef();
 
-	const sendEmail = () => {
+	const handleSendEmail = (e) => {
+		e.preventDefault();
+		setIsLoading(true);
 		if (!name || !email || !message) {
 			setSendError("All fields are required");
 		}
@@ -40,6 +43,7 @@ const Contact = () => {
 					// setEmail("");
 					setMessage("");
 					setSendError("");
+					setIsLoading(false);
 					toast("Message sent successfully. I will get back to you shortly");
 				},
 				(error) => {
@@ -48,6 +52,7 @@ const Contact = () => {
 							? error.text
 							: "Check your internet connection"
 					);
+					setIsLoading(false);
 					setSendError(
 						error.text.length > 0
 							? error.text
@@ -57,20 +62,20 @@ const Contact = () => {
 			);
 	};
 
-	const { mutate, isLoading } = useMutation(sendEmail, {
-		onError: (error) => {
-			console.error(error);
-		},
-		onSuccess: () => {
-			queryClient.invalidateQueries("sending email");
-		},
-	});
-	console.log(isLoading);
+	// const { mutate, isLoading } = useMutation(sendEmail, {
+	// 	onError: (error) => {
+	// 		console.error(error);
+	// 	},
+	// 	onSuccess: () => {
+	// 		queryClient.invalidateQueries("sending email");
+	// 	},
+	// });
+	// console.log(isLoading);
 
-	const handleSendEmail = (e) => {
-		e.preventDefault();
-		mutate();
-	};
+	// const handleSendEmail = (e) => {
+	// 	e.preventDefault();
+	// 	mutate();
+	// };
 
 	return (
 		<div className="md:px-10 px-5 my-10" id="contact">
@@ -122,7 +127,7 @@ const Contact = () => {
 					<p className="mt-16 text-white text-base mb-6">
 						Contact me, let's make magic together ✨
 					</p>
-					<form ref={form} onSubmit={handleSendEmail}>
+					<form ref={form} onSubmit={(e) => handleSendEmail(e)}>
 						<input
 							type="text"
 							name="name"
