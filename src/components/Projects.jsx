@@ -50,9 +50,10 @@ const Projects = () => {
         "Owe is your Yoruba learning assistant. Level up your Yoruba, with every proverb. Yoruba wisdom, at your fingertips!",
       technologies: [
         "Next JS",
+        "Node JS",
         "Gemini API",
         "Text-to-Speech",
-        "Speech-to-Text",
+        // "Speech-to-Text",
       ],
       live_url: "https://owe-web.vercel.app/",
       github_url: "",
@@ -169,7 +170,7 @@ const Projects = () => {
               <div className="flex gap-3 mb-3">
                 {project.technologies.map((tech, index) => (
                   <div key={index} className="">
-                    <p className="rounded-md bg-[#1B99F7] p-1 px-2 text-[11px]">
+                    <p className="rounded-md bg-[#1B99F7] p-1 px-2 text-[11px] w-max">
                       {tech}
                     </p>
                   </div>
