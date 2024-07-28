@@ -27,15 +27,6 @@ const Projects = () => {
   }
   const projects = [
     {
-      title: "FINANCE TRACKER",
-      description:
-        "Your Comprehensive Full-Stack Web Application for Seamless Transaction Management: A dynamic full-stack web application designed to effortlessly record and manage your financial transactions",
-      technologies: ["React JS", "Node JS", "REST API"],
-      live_url: "https://finance-tracker-app1.netlify.app",
-      github_url: "https://github.com/Faithful001/finance-tracker-app",
-      photo: financetracker,
-    },
-    {
       title: "MEALSTAER",
       description:
         "Your meal planning buddy. Effortlessly organize and plan your meals anytime, anywhere.",
@@ -58,6 +49,15 @@ const Projects = () => {
       live_url: "https://owe-web.vercel.app/",
       github_url: "",
       photo: owe_app,
+    },
+    {
+      title: "FINANCE TRACKER",
+      description:
+        "Your Comprehensive Full-Stack Web Application for Seamless Transaction Management: A dynamic full-stack web application designed to effortlessly record and manage your financial transactions",
+      technologies: ["React JS", "Node JS", "REST API"],
+      live_url: "https://finance-tracker-app1.netlify.app",
+      github_url: "https://github.com/Faithful001/finance-tracker-app",
+      photo: financetracker,
     },
     {
       title: "SALER APP LANDING PAGE",
