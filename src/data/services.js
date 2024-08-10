@@ -25,7 +25,7 @@ const services = [
   {
     name: "TECHNICAL SUPPORT",
     description:
-      "I provide expert technical support to quickly troubleshoot and resolve frontend issues, ensuring your web applications run smoothly and efficiently. My focus is on delivering prompt solutions to keep your user experience seamless and your systems performing at their best.",
+      "I provide expert technical support to swiftly troubleshoot and resolve software challenges, ensuring your systems run smoothly and efficiently. My focus is on delivering prompt, effective solutions to maintain seamless user experiences and optimal system performance.",
     image: "../src/assets/icons/technical-support.png",
   },
   // {
