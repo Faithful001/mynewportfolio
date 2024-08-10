@@ -1,36 +1,29 @@
-import React from "react";
+import services from "../data/services";
 
 const Services = () => {
-	return (
-		<div>
-			<h1 className="text-[#1B99F7] font-semibold text-3xl mt-14">
-				Where I've worked
-			</h1>
-			<div className="work-info">
-				<div className="work">
-					<div className="Bleverr">
-						<p className="">Bleverr</p>
-					</div>
-					<div className="Teknology">
-						<p className="">Teknology</p>
-					</div>
-					<div className="Freelancer">
-						<p className="">Freelancer</p>
-					</div>
-				</div>
-				<div className="info"></div>
-			</div>
-			{/* <div className='grid md:grid-cols-3 my-8 gap-5'>
-              {
-                services.map(service => <div key={service.id} className='service-card flex flex-col justify-center items-center p-6 text-center text-white'>
-                    <img src={service.image} alt="" className='mb-3' />
-                    <h6 className='text-2xl mb-4'>{service.name}</h6>
-                    <p className='text-base'>{service.description}</p>
-                </div>)
-              }
-              </div> */}
-		</div>
-	);
+  return (
+    <div className={`pt-5 my-5 md:px-10 px-7`} id="services">
+      <div className="gradientTex mb-7">
+        <h1 className="text-[#1B99F7] font-semibold text-2xl mt-5">
+          Services<span className={`animate-bounce`}>👨🏼‍💻</span>
+        </h1>
+        <p className="text-lg">What I bring to the table 😏</p>
+      </div>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        {services.map((data, index) => (
+          <div
+            className="flex flex-col bg-[#1A1A1A] p-5 rounded-xl gap-1"
+            key={index}
+          >
+            <img className="max-w-[4.5rem] mb-3" src={data.image} alt="" />
+            <p className="font-bold text-2xl">{data.name}</p>
+
+            <p className="font-light">{data.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Services;

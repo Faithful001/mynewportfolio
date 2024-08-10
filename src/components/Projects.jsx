@@ -9,6 +9,7 @@ import mealstaer from "../assets/projects/mealstaer.png";
 import bandage from "../assets/projects/bandage.png";
 import owe_app from "../assets/projects/owe-app.png";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const [showPrivate, setShowPrivate] = useState("");
@@ -46,8 +47,8 @@ const Projects = () => {
         "Text-to-Speech",
         // "Speech-to-Text",
       ],
-      live_url: "https://owe-web.vercel.app/",
-      github_url: "",
+      live_url: "https://www.oweyoruba.ng/",
+      github_url: null,
       photo: owe_app,
     },
     {
@@ -101,7 +102,7 @@ const Projects = () => {
         "A sleek, responsive landing page featuring an intuitive add-to-cart functionality. Enhance your shopping experience with seamless product selection and purchase capabilities.",
       technologies: ["Next JS", "Tailwind"],
       live_url: "https://basket-ecommerce.vercel.app",
-      github_url: "",
+      github_url: null,
       photo: bandage,
     },
   ];
@@ -157,10 +158,12 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   onClick={(e) => project.github_url == "" && handleClick(e)}
                   onMouseEnter={() =>
-                    project.github_url == "" && handleMouseEnter(project.title)
+                    project.github_url == null &&
+                    handleMouseEnter(project.title)
                   }
                   onMouseLeave={() =>
-                    project.github_url == "" && handleMouseLeave(project.title)
+                    project.github_url == null &&
+                    handleMouseLeave(project.title)
                   }
                 >
                   <img className="h-6" src={github} alt="" />

@@ -2,7 +2,7 @@ import React from "react";
 import emoji from "../assets/memoji1.png";
 import my_resume from "./fullstack_resume.pdf";
 
-const Home = () => {
+const Hero = () => {
   return (
     <div
       className="home relative md:bottom-20 bottom-[20px] md:px-10 px-7 md:h-screen flex flex-col md:flex-row items-center justify-center"
@@ -13,7 +13,9 @@ const Home = () => {
         {/* image & content */}
         {/* text */}
         <div className="text-white">
-          <h6 className="mt-12 -mb-2 text-xl opacity-80">Hello, my name is</h6>
+          <h6 className="mt-12 -mb-2 text-xl opacity-80">
+            Hello there. My name is
+          </h6>
           <h1 className="md:leading-[70px] leading-[50px] my-4 md:text-[64px] text-[50px] text-[#1B99F7] font-bold">
             Faithful Eromosele
           </h1>
@@ -24,7 +26,7 @@ const Home = () => {
           </p>
           <div className="mt-5">
             <a
-              href="https://drive.google.com/file/d/17rJ44EqTe3WWsWHchCqFzaQRUVi7pPHd/view?usp=sharing"
+              href="https://drive.google.com/file/d/1lbJZjZ0aUMpfwo-DxsIlxcJB2daqQlw3/view?usp=sharing"
               //   download
               target="_blank"
               rel="noopener noreferrer"
@@ -36,14 +38,15 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="rounded-full w-40 h-40 p-20 opacity-40 blur-3xl bg-[#1B99F7] absolute top-0 right-6" />
+      <div className="rounded-full w-40 h-40 p-20 opacity-40 blur-3xl bg-[#1B99F7] absolute bottom-0 left-6" />
       <img
         className="md:h-96 md:max-w-[384px] h-72 max-w-[288px]"
         src={emoji}
         alt=""
       />
-      {/* </div> */}
     </div>
   );
 };
 
-export default Home;
+export default Hero;

@@ -2,20 +2,22 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Home from "../components/Home";
+import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import Services from "../components/Services";
 
 const Body = () => {
-	return (
-		<div>
-			<Header />
-			<Home />
-			<About />
-			<Projects />
-			<Contact />
-			<Footer />
-		</div>
-	);
+  return (
+    <div>
+      <Header />
+      <Hero />
+      <About />
+      <Services />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
+  );
 };
 
 export default Body;
