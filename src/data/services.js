@@ -8,25 +8,25 @@ const services = [
     name: "FRONTEND DEVELOPMENT",
     description:
       "I create responsive, user-friendly interfaces with a vast array of technologies including Next.js, React.js, and Tailwind CSS, transaforming ideas into seamless digital experiences.",
-    image: "../src/assets/icons/frontend_development.png",
+    image: "../src/assets/icons/frontend-development.png",
   },
   {
     name: "BACKEND DEVELOPMENT",
     description:
       "I design and implement robust, highly-performant backend infrastructure that scale effortlessly. Leveraging cutting-edge technologies, I ensure your applications run smoothly and efficiently, even as they grow.",
-    image: "../src/assets/icons/backend_development_2.png",
+    image: "../src/assets/icons/backend-development.png",
   },
   {
     name: "MOBILE APP DEVELOPMENT",
     description:
       "I specialize in mobile development using React Native, crafting intuitive and responsive apps that deliver exceptional user experiences across platforms. My focus is on delivering seamless functionality and high performance, ensuring apps meet users' needs effectively and efficiently.",
-    image: "../src/assets/icons/mobile_development.png",
+    image: "../src/assets/icons/mobile-development.png",
   },
   {
     name: "TECHNICAL SUPPORT",
     description:
       "I provide expert technical support to quickly troubleshoot and resolve frontend issues, ensuring your web applications run smoothly and efficiently. My focus is on delivering prompt solutions to keep your user experience seamless and your systems performing at their best.",
-    image: "../src/assets/icons/technical_support.png",
+    image: "../src/assets/icons/technical-support.png",
   },
   // {
   //   name: "VERSION CONTROL",
