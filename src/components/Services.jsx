@@ -7,6 +7,9 @@ const Services = () => {
           Services<span className={`animate-bounce`}>👨🏼‍💻</span>
         </h1>
         <p className="text-lg">What I bring to the table 😏</p>
+        <p className="text-sm">
+          I focus on helping your brand grow and expand effectively.{" "}
+        </p>
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {services.map((data, index) => (
@@ -15,7 +18,7 @@ const Services = () => {
             key={index}
           >
             <img className="max-w-[4.3rem] mb-3" src={data.image} alt="" />
-            <p className="font-bold text-2xl">{data.name}</p>
+            <p className="text-2xl font-bold">{data.name}</p>
 
             <p className="font-light">{data.description}</p>
           </div>
