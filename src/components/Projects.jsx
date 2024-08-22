@@ -4,6 +4,7 @@ import financetracker from "../assets/projects/finance_tracker.png";
 import diktion from "../assets/projects/diktion.png";
 import workoutbuddy from "../assets/projects/workoutapp.png";
 import saler from "../assets/projects/saler.png";
+import appnovia from "../assets/projects/appnovia.png";
 import vulue from "../assets/projects/vulue.png";
 import mealstaer from "../assets/projects/mealstaer.png";
 import bandage from "../assets/projects/bandage.png";
@@ -28,15 +29,6 @@ const Projects = () => {
   }
   const projects = [
     {
-      title: "MEALSTAER",
-      description:
-        "Your meal planning buddy. Effortlessly organize and plan your meals anytime, anywhere.",
-      technologies: ["React JS", "Node JS", "REST API"],
-      live_url: "https://mealstaer.vercel.app",
-      github_url: "https://github.com/Faithful001/mealstaer",
-      photo: mealstaer,
-    },
-    {
       title: "OWE APP",
       description:
         "Owe is your Yoruba learning assistant. Level up your Yoruba, with every proverb. Yoruba wisdom, at your fingertips!",
@@ -50,6 +42,15 @@ const Projects = () => {
       live_url: "https://www.oweyoruba.ng/",
       github_url: null,
       photo: owe_app,
+    },
+    {
+      title: "MEALSTAER",
+      description:
+        "Your meal planning buddy. Effortlessly organize and plan your meals anytime, anywhere.",
+      technologies: ["React JS", "Node JS", "REST API"],
+      live_url: "https://mealstaer.vercel.app",
+      github_url: "https://github.com/Faithful001/mealstaer",
+      photo: mealstaer,
     },
     {
       title: "FINANCE TRACKER",
@@ -77,6 +78,15 @@ const Projects = () => {
       live_url: "https://work-o-buddy.vercel.app/",
       github_url: "https://github.com/Faithful001/workout-app",
       photo: workoutbuddy,
+    },
+    {
+      title: "APPNOVIA",
+      description:
+        "Responsive landing page for Appnovia. This page ensures optimal user experience across all devices",
+      technologies: ["Next JS", "Typescript", "Tailwind CSS"],
+      live_url: "https://appnovia-app.vercel.app/",
+      github_url: "https://github.com/Faithful001/appnovia_web",
+      photo: appnovia,
     },
 
     // {
