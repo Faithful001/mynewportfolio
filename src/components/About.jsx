@@ -2,6 +2,7 @@ import React from "react";
 import Services from "./Services";
 import Work from "./Work";
 import faithful from "../assets/faithful.jpg";
+import executive from "../assets/executive.jpg";
 import html from "../assets/portfolio-pngs/html.png";
 import css from "../assets/portfolio-pngs/css.png";
 import js from "../assets/portfolio-pngs/javascript.png";
@@ -17,6 +18,7 @@ import git from "../assets/portfolio-pngs/git.png";
 import php from "../assets/portfolio-pngs/php.png";
 import laravel from "../assets/portfolio-pngs/laravel.png";
 import golang from "../assets/portfolio-pngs/golang.png";
+import nextjs from "../assets/portfolio-pngs/nextjs.png";
 
 const About = () => {
   const techs = [
@@ -26,6 +28,7 @@ const About = () => {
     { image: jquery, text: "JQuery" },
     // { image: bootstrap, text: "BootStrap" },
     { image: react, text: "React" },
+    { image: nextjs, text: "Next JS" },
     { image: tailwind, text: "Tailwind" },
     { image: typescript, text: "TypeScript" },
     { image: nodejs, text: "Node JS" },
@@ -65,7 +68,10 @@ const About = () => {
       <div className="lang-pic md:flex justify-evenly">
         <div className="grid grid-cols-4">
           {techs.map((tech, index) => (
-            <div key={index} className="flex flex-col items-center">
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center"
+            >
               <img
                 src={tech.image}
                 alt=""
@@ -79,7 +85,7 @@ const About = () => {
           <div className="p-2 border-2 border-dashed border-primary rounded-xl">
             <img
               className="h-[300px] max-w-[300px] rounded cursor-pointer grayscale hover:grayscale-0 transition-all duration-300"
-              src={faithful}
+              src={executive}
               alt=""
             />
           </div>

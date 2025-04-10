@@ -9,6 +9,8 @@ import vulue from "../assets/projects/vulue.png";
 import mealstaer from "../assets/projects/mealstaer.png";
 import bandage from "../assets/projects/bandage.png";
 import owe_app from "../assets/projects/owe-app.png";
+import wealthy_elephant from "../assets/projects/wealthy_elephant.png";
+import fourgeehub from "../assets/projects/4geehub.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -29,6 +31,23 @@ const Projects = () => {
   }
   const projects = [
     {
+      title: "4GEE HUB",
+      description:
+        "4GEE Hub is a customer focused platform providing users with the best rates to trade their giftcards on the go.",
+      technologies: ["React JS", "Redux", "RTK Query"],
+      live_url: "https://4geehub.ng/",
+      github_url: null,
+      photo: fourgeehub,
+    },
+    {
+      title: "WEALTHY ELEPHANT",
+      description: "Wealthy Elephant Landing Page.",
+      technologies: ["Next JS", "Context API", "Axios"],
+      live_url: "https://wealthyelephant.vercel.app",
+      github_url: null,
+      photo: wealthy_elephant,
+    },
+    {
       title: "OWE APP",
       description:
         "Owe is your Yoruba learning assistant. Level up your Yoruba, with every proverb. Yoruba wisdom, at your fingertips!",
@@ -39,7 +58,7 @@ const Projects = () => {
         "Text-to-Speech",
         // "Speech-to-Text",
       ],
-      live_url: "https://www.oweyoruba.ng/",
+      live_url: "https://oweyoruba.vercel.app/",
       github_url: null,
       photo: owe_app,
     },
@@ -48,7 +67,7 @@ const Projects = () => {
       description:
         "Your meal planning buddy. Effortlessly organize and plan your meals anytime, anywhere.",
       technologies: ["React JS", "Node JS", "REST API"],
-      live_url: "https://mealstaer.vercel.app",
+      live_url: "https://mealstaerr.vercel.app",
       github_url: "https://github.com/Faithful001/mealstaer",
       photo: mealstaer,
     },
@@ -57,7 +76,7 @@ const Projects = () => {
       description:
         "Your Comprehensive Full-Stack Web Application for Seamless Transaction Management: A dynamic full-stack web application designed to effortlessly record and manage your financial transactions",
       technologies: ["React JS", "Node JS", "REST API"],
-      live_url: "https://finance-tracker-app1.netlify.app",
+      live_url: "https://financetraccker.vercel.app/",
       github_url: "https://github.com/Faithful001/finance-tracker-app",
       photo: financetracker,
     },
@@ -66,7 +85,7 @@ const Projects = () => {
       description:
         "Saler App Landing Page: Captivating entry point designed to engage and inform users about the Saler app.",
       technologies: ["React JS", "Tailwind"],
-      live_url: "https://saler-app.vercel.app/",
+      live_url: "https://salerr.vercel.app",
       github_url: "https://github.com/Faithful001/saler-landing_page",
       photo: saler,
     },
@@ -75,7 +94,7 @@ const Projects = () => {
       description:
         "A comprehensive fullstack web app designed to help you effortlessly log and monitor your workout exercises. Stay motivated with detailed exercise records and performance analytics.",
       technologies: ["React JS", "Node JS", "REST API"],
-      live_url: "https://work-o-buddy.vercel.app/",
+      live_url: "https://work-out-buddyy.vercel.app",
       github_url: "https://github.com/Faithful001/workout-app",
       photo: workoutbuddy,
     },
@@ -84,7 +103,7 @@ const Projects = () => {
       description:
         "Responsive landing page for Appnovia. This page ensures optimal user experience across all devices",
       technologies: ["Next JS", "Typescript", "Tailwind CSS"],
-      live_url: "https://appnovia-app.vercel.app/",
+      live_url: "https://appnovia-web.vercel.app/",
       github_url: "https://github.com/Faithful001/appnovia_web",
       photo: appnovia,
     },
@@ -97,24 +116,24 @@ const Projects = () => {
     // 	github_url: "https://github.com/Faithful001/vulue_landing_page",
     // 	photo: vulue,
     // },
-    {
-      title: "DIKTION",
-      description:
-        "An intuitive app for searching your favorite words. Discover definitions, synonyms, and more. Dare to search and expand your vocabulary!",
-      technologies: ["React JS", "Typescript", "REST API"],
-      live_url: "https://diktion.vercel.app/",
-      github_url: "https://github.com/Faithful001/diktion",
-      photo: diktion,
-    },
-    {
-      title: "BANDAGE LANDING PAGE",
-      description:
-        "A sleek, responsive landing page featuring an intuitive add-to-cart functionality. Enhance your shopping experience with seamless product selection and purchase capabilities.",
-      technologies: ["Next JS", "Tailwind"],
-      live_url: "https://basket-ecommerce.vercel.app",
-      github_url: null,
-      photo: bandage,
-    },
+    // {
+    //   title: "DIKTION",
+    //   description:
+    //     "An intuitive app for searching your favorite words. Discover definitions, synonyms, and more. Dare to search and expand your vocabulary!",
+    //   technologies: ["React JS", "Typescript", "REST API"],
+    //   live_url: "https://diktion.vercel.app/",
+    //   github_url: "https://github.com/Faithful001/diktion",
+    //   photo: diktion,
+    // },
+    // {
+    //   title: "BANDAGE LANDING PAGE",
+    //   description:
+    //     "A sleek, responsive landing page featuring an intuitive add-to-cart functionality. Enhance your shopping experience with seamless product selection and purchase capabilities.",
+    //   technologies: ["Next JS", "Tailwind"],
+    //   live_url: "https://basket-ecommerce.vercel.app",
+    //   github_url: null,
+    //   photo: bandage,
+    // },
   ];
 
   // const techs = projects.map((tech) => {
@@ -194,6 +213,8 @@ const Projects = () => {
               </p>
               <a
                 href={project.live_url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-lg p-2 text-xs bg-[#1a1a1a] border-[1px] border-white text-white duration-300 hover:bg-[#1B99F7] hover:text-white"
               >
                 View Project
