@@ -11,8 +11,10 @@ import bandage from "../assets/projects/bandage.png";
 import owe_app from "../assets/projects/owe-app.png";
 import wealthy_elephant from "../assets/projects/wealthy_elephant.png";
 import fourgeehub from "../assets/projects/4geehub.png";
+import fundify from "../assets/projects/fundify.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { MdArrowOutward } from "react-icons/md";
 
 const Projects = () => {
   const [showPrivate, setShowPrivate] = useState("");
@@ -48,6 +50,15 @@ const Projects = () => {
       photo: wealthy_elephant,
     },
     {
+      title: "FUNDIFY",
+      description:
+        "A decentralized crowdfunding platform built on Ethereum (Sepolia Testnet) that enables trustless fundraising through cryptocurrency contributions",
+      technologies: ["Solidity", "Next JS", "Third Web", "Cloudinary"],
+      live_url: "https://funddifyy.vercel.app/",
+      github_url: "https://github.com/Faithful001/fundify-app",
+      photo: fundify,
+    },
+    {
       title: "OWE APP",
       description:
         "Owe is your Yoruba learning assistant. Level up your Yoruba, with every proverb. Yoruba wisdom, at your fingertips!",
@@ -71,6 +82,7 @@ const Projects = () => {
       github_url: "https://github.com/Faithful001/mealstaer",
       photo: mealstaer,
     },
+
     {
       title: "FINANCE TRACKER",
       description:
@@ -142,32 +154,44 @@ const Projects = () => {
 
   return (
     // changeable
-    <div
-      className="flex flex-col items-center pt-5 my-5 md:px-10 px-7"
-      id="projects"
-    >
-      <h1 className="text-[#1B99F7] font-semibold text-2xl mt-16">
-        Featured Projects<span className={`animate-bounce`}>👨‍🍳</span>
-      </h1>
-      <p className="my-3 text-white text-center text-sm md:w-3/4 leading-[27px]">
-        I have worked on many projects over the course of being a software
-        developer, here are a few of my live, real-world projects
-      </p>
+    <div className="md:px-10 px-7 pt-14 sm:-mt-24" id="projects">
+      <div className="">
+        <h1 className="text-[#1B99F7] font-semibold text-2xl mt-16">
+          Featured Projects<span className={`animate-bounce`}>👨‍🍳</span>
+        </h1>
+        <p className="my-3 text-white text-sm md:w-2/4 w-full leading-[27px]">
+          I have worked on many projects over the course of being a software
+          developer, here are a few of my live, real-world projects
+        </p>
+      </div>
       {/* featured projects */}
 
       {/* changeable */}
-      <div className="flex flex-col items-center max-w-3xl mt-8 wrapper">
+      {/* <div className="flex flex-col items-center max-w-3xl mt-8 wrapper"> */}
+      <div className="grid sm:grid-cols-2 grid-cols-1 gap-7 w-full mt-8 wrapper">
         {projects.map((project, index) => (
-          <span className="max-w-5xl gap-5 mb-12 md:flex" key={index}>
-            <div className="flex justify-center mb-4">
+          <span
+            className="bg-[#1A1A1A] p-5 rounded-xl gap-5 flex flex-col items-start"
+            key={index}
+          >
+            <div
+              className="flex justify-center mb-4"
+              style={{ clipPath: "inset(0 0 0 0 round 0.5rem)" }}
+            >
               <img
-                className="project-image opacity-40 hover:opacity-80 transition-all duration-500 max-w-[480px] w-full rounded-lg"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
+                fill
+                // className="object-cover project-image opacity-40 hover:opacity-80 transition-all duration-500 max-w-[480px] w-full rounded-lg"
+                className="object-cover project-image opacity-40 hover:opacity-80 transition-all duration-500"
                 src={project.photo}
                 alt=""
               />
             </div>
-            <div className="relative flex flex-col items-start justify-center w-full md:w-1/2">
-              <div className="flex items-center gap-2 px-2 mb-3">
+            <div className="relative flex flex-col items-start justify-center w-full ">
+              <div className="flex items-center gap-2 pr-2 mb-3">
                 <p className="text-xl font-medium">{project.title}</p>
                 <div
                   className={`private absolute flex items-center justify-between md:-top-2 -top-7 left-0 text-xs text-white opacity-0 transition-opacity duration-300 bg-[#3a3a3abd] p-1 px-2 rounded-lg ${
@@ -199,7 +223,7 @@ const Projects = () => {
                 </a>
               </div>
 
-              <div className="flex gap-3 mb-3">
+              <div className="flex flex-wrap gap-3 mb-3">
                 {project.technologies.map((tech, index) => (
                   <div key={index} className="">
                     <p className="rounded-md bg-[#1B99F7] p-1 px-2 text-[11px] w-max">
@@ -215,9 +239,9 @@ const Projects = () => {
                 href={project.live_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-lg p-2 text-xs bg-[#1a1a1a] border-[1px] border-white text-white duration-300 hover:bg-[#1B99F7] hover:text-white"
+                className="rounded-lg p-2 flex items-center gap-1 text-xs bg-[#1a1a1a] border-[1px] border-white text-white duration-300 hover:bg-[#1B99F7] hover:text-white"
               >
-                View Project
+                View Project <MdArrowOutward />
               </a>
             </div>
           </span>

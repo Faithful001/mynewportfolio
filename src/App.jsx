@@ -6,7 +6,7 @@ import Body from "./pages/Body";
 function App() {
   return (
     <>
-      <div className="mx-3 transition-all duration-300 max-w-7xl">
+      <div className="mx-3 transition-all duration-300 ">
         <Router>
           <Routes>
             <Route index path="/" element={<Body />} />

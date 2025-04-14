@@ -11,18 +11,19 @@ const Services = () => {
           I focus on helping your brand grow and expand effectively.{" "}
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        {services.map((data, index) => (
-          <div
-            className="flex flex-col bg-[#1A1A1A] p-7 rounded-xl gap-1"
-            key={index}
-          >
-            <img className="max-w-[4.3rem] mb-3" src={data.image} alt="" />
-            <p className="text-2xl font-bold">{data.name}</p>
-
-            <p className="font-light">{data.description}</p>
-          </div>
-        ))}
+      <div className="grid grid-cols-1 gap-7 md:grid-cols-2">
+        {services.map((data, index) => {
+          return (
+            <div
+              className="flex flex-col bg-[#1A1A1A] p-7 rounded-xl gap-1"
+              key={index}
+            >
+              <data.image color="#1B99F7" size={30} className="mb-3" />
+              <p className="text-xl font-bold mb-1">{data.name}</p>
+              <p className="font-light opacity-75">{data.description}</p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

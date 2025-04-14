@@ -30,7 +30,7 @@ const Header = () => {
     <div
       className={
         navbar
-          ? "header active w-[90%] fixed bg-[#1b1b1b] rounded-full z-10 opacity-[0.96]"
+          ? "header active w-[90%] fixed bg-[#1b1b1b] backdrop-blur-md rounded-full z-10 bg-opacity-30 border-2 border-opacity-40 border-[#3a3a3a]"
           : "header w-full mt-2 z-50"
       }
     >

@@ -5,7 +5,7 @@ import my_resume from "./fullstack_resume.pdf";
 const Hero = () => {
   return (
     <div
-      className="home relative md:bottom-20 bottom-[20px] md:px-10 px-7 md:h-screen flex flex-col md:flex-row items-center justify-center"
+      className="home mt-12 relative md:bottom-20 bottom-[20px] md:px-10 px-7 md:h-screen flex flex-col md:flex-row items-center justify-center"
       id="home"
     >
       {/* <div className="section "> */}
@@ -13,16 +13,16 @@ const Hero = () => {
         {/* image & content */}
         {/* text */}
         <div className="text-white">
-          <h6 className="mt-12 -mb-2 text-xl opacity-80">
+          {/* <h6 className="mt-12 -mb-2 text-xl opacity-80">
             Hello there. My name is
-          </h6>
+          </h6> */}
           <h1 className="md:leading-[70px] leading-[50px] my-4 md:text-[64px] text-[50px] text-[#1B99F7] font-bold">
-            Faithful Eromosele
+            Innovative Software <br /> Engineer.
           </h1>
           <p className="max-w-xl opacity-80">
             Software Developer & Problem Solver. I build deliberate world-class
-            software. My job is to give you a beautiful, user-friendly, yet
-            sophiticated product
+            software. I like to craft beautiful, user-friendly, yet sophiticated
+            products
           </p>
           <div className="mt-5">
             <a
@@ -41,7 +41,7 @@ const Hero = () => {
       <div className="rounded-full w-40 h-40 p-20 opacity-40 blur-3xl bg-[#1B99F7] absolute top-0 right-6" />
       <div className="rounded-full w-40 h-40 p-20 opacity-40 blur-3xl bg-[#1B99F7] absolute bottom-0 left-6" />
       <img
-        className="md:h-96 md:max-w-[384px] h-72 max-w-[288px]"
+        className="md:h-[420px] md:max-w-[420px] h-[288px] max-w-[288px]"
         src={emoji}
         alt=""
       />

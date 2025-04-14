@@ -19,16 +19,20 @@ import php from "../assets/portfolio-pngs/php.png";
 import laravel from "../assets/portfolio-pngs/laravel.png";
 import golang from "../assets/portfolio-pngs/golang.png";
 import nextjs from "../assets/portfolio-pngs/nextjs.png";
+import ethersjs from "../assets/portfolio-pngs/ethers.png";
+import solidity from "../assets/portfolio-pngs/solidity.png";
 
 const About = () => {
   const techs = [
     // { image: html, text: "HTML" },
     // { image: css, text: "CSS" },
     { image: js, text: "Javascript" },
-    { image: jquery, text: "JQuery" },
+    // { image: jquery, text: "JQuery" },
     // { image: bootstrap, text: "BootStrap" },
     { image: react, text: "React" },
     { image: nextjs, text: "Next JS" },
+    { image: ethersjs, text: "Ethers JS" },
+    { image: solidity, text: "Solidity" },
     { image: tailwind, text: "Tailwind" },
     { image: typescript, text: "TypeScript" },
     { image: nodejs, text: "Node JS" },
