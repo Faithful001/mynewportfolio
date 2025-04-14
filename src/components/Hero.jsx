@@ -20,9 +20,8 @@ const Hero = () => {
             Innovative Software <br /> Engineer.
           </h1>
           <p className="max-w-xl opacity-80">
-            Software Developer & Problem Solver. I build deliberate world-class
-            software. I like to craft beautiful, user-friendly, yet sophiticated
-            products
+            I build deliberate world-class software. I enjoy creating innovative
+            solutions and tackling complex challenges.
           </p>
           <div className="mt-5">
             <a
