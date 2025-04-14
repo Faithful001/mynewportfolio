@@ -2,6 +2,7 @@ import React from "react";
 import Services from "./Services";
 import Work from "./Work";
 import faithful from "../assets/faithful.jpg";
+import faithful2 from "../assets/faithful I.jpg";
 import executive from "../assets/executive.jpg";
 import html from "../assets/portfolio-pngs/html.png";
 import css from "../assets/portfolio-pngs/css.png";
@@ -49,15 +50,14 @@ const About = () => {
         About me<span className={`animate-bounce`}>🔥</span>
       </h1>
       <p className="my-3 text-white font-light text-sm md:w-2/3 leading-[27px]">
-        Hi, my name is Faithful Eromosele, I am a software developer. I have
-        honed my skills in software development, actively crafting
-        visually-appealing user-interfaces and building robust, scalable and
-        secure server-side solutions.
-        <br />
+        I'm Faithful Eromosele. I have honed my skills in software development,
+        actively crafting visually-appealing user-interfaces and building
+        robust, scalable and secure software solutions.
+        {/* <br />
         <p className="mt-5">
           I have used and still use a couple of tools and languages for my
           development process. I have listed a few of them below
-        </p>
+        </p> */}
       </p>
 
       {/* <div className="items-center md:flex my-7">
@@ -88,8 +88,8 @@ const About = () => {
         <div className="flex justify-center my-10 faithful">
           <div className="p-2 border-2 border-dashed border-primary rounded-xl">
             <img
-              className="h-[300px] max-w-[300px] rounded cursor-pointer grayscale hover:grayscale-0 transition-all duration-300"
-              src={executive}
+              className="h-[300px] max-w-[300px] rounded grayscale hover:grayscale-0 transition-all duration-300"
+              src={faithful2}
               alt=""
             />
           </div>
