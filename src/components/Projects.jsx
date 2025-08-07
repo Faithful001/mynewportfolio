@@ -45,7 +45,7 @@ const Projects = () => {
       title: "WEALTHY ELEPHANT",
       description: "Wealthy Elephant Landing Page.",
       technologies: ["Next JS", "Context API", "Axios"],
-      live_url: "https://wealthyelephant.vercel.app",
+      live_url: "https://wealthyelephant.com",
       github_url: null,
       photo: wealthy_elephant,
     },
@@ -110,15 +110,15 @@ const Projects = () => {
       github_url: "https://github.com/Faithful001/workout-app",
       photo: workoutbuddy,
     },
-    {
-      title: "APPNOVIA",
-      description:
-        "Responsive landing page for Appnovia. This page ensures optimal user experience across all devices",
-      technologies: ["Next JS", "Typescript", "Tailwind CSS"],
-      live_url: "https://appnovia-web.vercel.app/",
-      github_url: "https://github.com/Faithful001/appnovia_web",
-      photo: appnovia,
-    },
+    // {
+    //   title: "APPNOVIA",
+    //   description:
+    //     "Responsive landing page for Appnovia. This page ensures optimal user experience across all devices",
+    //   technologies: ["Next JS", "Typescript", "Tailwind CSS"],
+    //   live_url: "https://appnovia-web.vercel.app/",
+    //   github_url: "https://github.com/Faithful001/appnovia_web",
+    //   photo: appnovia,
+    // },
 
     // {
     // 	title: "VULUE LANDING PAGE",
