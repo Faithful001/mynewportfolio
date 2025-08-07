@@ -96,17 +96,17 @@ const Contact = () => {
             >
               <img className="h-[22px] mr-5" src={github} alt="" />
             </a>
-            <a
+{/*             <a
               className="ml-4"
               href="https://web.facebook.com/profile.php?id=100049869877529"
               target="_blank"
               rel="noreferrer"
             >
               <img className="h-[22px] mr-5" src={facebook} alt="" />
-            </a>
+            </a> */}
             <a
               className="ml-4"
-              href="https://twitter.com/faithfultheking"
+              href="https://x.com/faromtheedev"
               target="_blank"
               rel="noreferrer"
             >
