@@ -45,7 +45,7 @@ const Projects = () => {
       title: "WEALTHY ELEPHANT",
       description: "Wealthy Elephant Landing Page.",
       technologies: ["Next JS", "Context API", "Axios"],
-      live_url: "https://wealthyelephant.com",
+      live_url: "https://www.wealthyelephant.com",
       github_url: null,
       photo: wealthy_elephant,
     },
