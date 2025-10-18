@@ -157,7 +157,7 @@ const Projects = () => {
     <div className="md:px-10 px-7 pt-14 sm:-mt-24" id="projects">
       <div className="">
         <h1 className="text-[#1B99F7] font-semibold text-2xl mt-16">
-          Featured Projects<span className={`animate-bounce`}>👨‍🍳</span>
+          Featured Projects
         </h1>
         <p className="my-3 text-white text-sm md:w-2/4 w-full leading-[27px]">
           I have worked on many projects over the course of being a software
@@ -168,7 +168,7 @@ const Projects = () => {
 
       {/* changeable */}
       {/* <div className="flex flex-col items-center max-w-3xl mt-8 wrapper"> */}
-      <div className="grid sm:grid-cols-2 grid-cols-1 gap-7 w-full mt-8 wrapper">
+      <div className="grid w-full grid-cols-1 mt-8 sm:grid-cols-2 gap-7 wrapper">
         {projects.map((project, index) => (
           <span
             className="bg-[#1A1A1A] p-5 rounded-xl gap-5 flex flex-col items-start"
@@ -185,7 +185,7 @@ const Projects = () => {
                 }}
                 fill
                 // className="object-cover project-image opacity-40 hover:opacity-80 transition-all duration-500 max-w-[480px] w-full rounded-lg"
-                className="object-cover project-image opacity-40 hover:opacity-80 transition-all duration-500"
+                className="object-cover transition-all duration-500 project-image opacity-40 hover:opacity-80"
                 src={project.photo}
                 alt=""
               />

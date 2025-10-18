@@ -8,14 +8,14 @@ import Services from "../components/Services";
 
 const Body = () => {
   return (
-    <div>
+    <div className="w-full flex flex-col items-center">
       <Header />
       <Hero />
       <About />
       <Services />
       <Projects />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

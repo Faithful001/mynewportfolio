@@ -22,6 +22,10 @@ import golang from "../assets/portfolio-pngs/golang.png";
 import nextjs from "../assets/portfolio-pngs/nextjs.png";
 import ethersjs from "../assets/portfolio-pngs/ethers.png";
 import solidity from "../assets/portfolio-pngs/solidity.png";
+// import java from "../assets/portfolio-pngs/java.png";
+import javaII from "../assets/portfolio-pngs/javaII.png";
+import springboot from "../assets/portfolio-pngs/springboot.png";
+import nestjs from "../assets/portfolio-pngs/nestjs.png";
 
 const About = () => {
   const techs = [
@@ -37,8 +41,9 @@ const About = () => {
     { image: tailwind, text: "Tailwind" },
     { image: typescript, text: "TypeScript" },
     { image: nodejs, text: "Node JS" },
-    { image: php, text: "PHP" },
-    { image: laravel, text: "Laravel" },
+    { image: nestjs, text: "Nest JS" },
+    { image: javaII, text: "Java" },
+    { image: springboot, text: "Spring Boot" },
     { image: golang, text: "Golang" },
     { image: python, text: "Python" },
     { image: linux, text: "Linux" },
@@ -46,9 +51,7 @@ const About = () => {
   ];
   return (
     <div className="md:px-10 px-7 pt-14 sm:-mt-24" id="about">
-      <h1 className="text-[#1B99F7] font-semibold text-2xl mt-5">
-        About me<span className={`animate-bounce`}>🔥</span>
-      </h1>
+      <h1 className="text-[#1B99F7] font-semibold text-2xl mt-5">About me</h1>
       <p className="my-3 text-white font-light text-sm md:w-2/3 leading-[27px]">
         I'm Faithful Eromosele. I have honed my skills in software development,
         actively crafting visually-appealing user-interfaces and building
@@ -79,16 +82,16 @@ const About = () => {
               <img
                 src={tech.image}
                 alt=""
-                className="p-4 h-[65px] max-w-[80px] grayscale hover:grayscale-0 cursor-pointer transition-all duration-500"
+                className="p-4 h-[60px] max-w-[75px]"
               />
-              <p className="ml-6 text-xs text-white">{tech.text}</p>
+              <p className="text-xs text-white">{tech.text}</p>
             </div>
           ))}
         </div>
         <div className="flex justify-center my-10 faithful">
           <div className="p-2 border-2 border-dashed border-primary rounded-xl">
             <img
-              className="h-[300px] max-w-[300px] rounded grayscale hover:grayscale-0 transition-all duration-300"
+              className="h-[300px] max-w-[300px] rounded"
               src={faithful2}
               alt=""
             />

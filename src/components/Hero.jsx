@@ -5,7 +5,7 @@ import my_resume from "./fullstack_resume.pdf";
 const Hero = () => {
   return (
     <div
-      className="home mt-12 relative md:bottom-20 bottom-[20px] md:px-10 px-7 md:h-screen flex flex-col md:flex-row items-center justify-center"
+      className="home mt-12 relative md:bottom-20 bottom-[20px] md:px-10 px-7 md:h-screen flex flex-col md:flex-row items-center justify-center w-full"
       id="home"
     >
       {/* <div className="section "> */}
