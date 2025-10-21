@@ -36,7 +36,7 @@ const Projects = () => {
       title: "4GEE HUB",
       description:
         "4GEE Hub is a customer focused platform providing users with the best rates to trade their giftcards on the go.",
-      technologies: ["React JS", "Redux", "RTK Query"],
+      technologies: ["React JS", "Redux", "Nest JS", "Solidity", "Blockchain"],
       live_url: "https://4geehub.ng/",
       github_url: null,
       photo: fourgeehub,
