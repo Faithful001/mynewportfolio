@@ -29,7 +29,7 @@ const Hero = () => {
               //   download
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-28 transition-all duration-500 bg-[#000000] outline-none outline-offset-1 outline-[#1B99F7] py-2 px-7 rounded hover:bg-[#1b98f734] text-[#1B99F7] text-sm"
+              className="flex items-center justify-center w-max transition-all duration-500 bg-[#000000] outline-none outline-offset-1 outline-[#1B99F7] py-2 px-4 rounded hover:bg-[#1b98f734] text-[#1B99F7] text-sm"
             >
               Check Resume
               {/* <span className="material-symbols-outlined">download</span> */}
