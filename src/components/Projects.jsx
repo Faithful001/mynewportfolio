@@ -43,7 +43,8 @@ const Projects = () => {
     },
     {
       title: "WEALTHY ELEPHANT",
-      description: "Wealthy Elephant Landing Page.",
+      description:
+        "Modern landing page showcasing Wealthy Elephant’s innovative rental and business solutions with a clean, engaging design.",
       technologies: ["Next JS", "Context API", "Axios"],
       live_url: "https://www.wealthyelephant.com",
       github_url: null,
