@@ -18,6 +18,7 @@ import activ8 from "../assets/projects/activ8.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { MdArrowOutward } from "react-icons/md";
+import { FiGithub } from "react-icons/fi";
 
 const Projects = () => {
   const [showPrivate, setShowPrivate] = useState("");
@@ -228,9 +229,10 @@ const Projects = () => {
               />
             </div>
             <div className="relative flex flex-col items-start justify-center w-full ">
-              <div className="flex items-center gap-2 pr-2 mb-3">
+              <div className="flex items-center justify-between w-full gap-2 pr-2 mb-3">
                 <p className="text-xl font-medium">{project.title}</p>
-                <div
+
+                {/* <div
                   className={`private absolute flex items-center justify-between md:-top-2 -top-7 left-0 text-xs text-white opacity-0 transition-opacity duration-300 bg-[#3a3a3abd] p-1 px-2 rounded-lg ${
                     showPrivate === `true ${project.title}`
                       ? "opacity-100"
@@ -241,23 +243,27 @@ const Projects = () => {
                     lock
                   </span>
                   <p>This repository is private</p>
-                </div>
-                <a
-                  href={project.github_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => project.github_url == "" && handleClick(e)}
-                  onMouseEnter={() =>
-                    project.github_url == null &&
-                    handleMouseEnter(project.title)
-                  }
-                  onMouseLeave={() =>
-                    project.github_url == null &&
-                    handleMouseLeave(project.title)
-                  }
-                >
-                  <img className="h-6" src={github} alt="" />
-                </a>
+                </div> */}
+
+                {project.github_url !== null && (
+                  <a
+                    href={project.github_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => project.github_url == "" && handleClick(e)}
+                    onMouseEnter={() =>
+                      project.github_url == null &&
+                      handleMouseEnter(project.title)
+                    }
+                    onMouseLeave={() =>
+                      project.github_url == null &&
+                      handleMouseLeave(project.title)
+                    }
+                    className="p-[6px] rounded-full group hover:bg-primary"
+                  >
+                    <FiGithub className="text-white group-hover:text-gray-700" />
+                  </a>
+                )}
               </div>
 
               <div className="flex flex-wrap gap-3 mb-3">
