@@ -6,16 +6,16 @@ import { CgSupport } from "react-icons/cg";
 
 const services = [
   {
-    name: "FRONTEND DEVELOPMENT",
-    description:
-      "I create responsive, user-friendly interfaces with a vast array of technologies including Next.js, React.js, and Tailwind CSS, transforming ideas into seamless digital experiences.",
-    image: IoCode,
-  },
-  {
     name: "BACKEND DEVELOPMENT",
     description:
       "I design and implement robust, highly-performant backend infrastructure that scale effortlessly. Leveraging cutting-edge technologies, I ensure your applications run smoothly and efficiently, even as they grow.",
     image: LuServer,
+  },
+  {
+    name: "FRONTEND DEVELOPMENT",
+    description:
+      "I create responsive, user-friendly interfaces with a vast array of technologies including Next.js, React.js, and Tailwind CSS, transforming ideas into seamless digital experiences.",
+    image: IoCode,
   },
   {
     name: "MOBILE APP DEVELOPMENT",

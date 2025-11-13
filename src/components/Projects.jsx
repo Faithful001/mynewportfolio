@@ -13,6 +13,8 @@ import wealthy_elephant from "../assets/projects/wealthy_elephant.png";
 import fourgeehub from "../assets/projects/4geehub.png";
 import fundify from "../assets/projects/fundify.png";
 import herdix_server from "../assets/projects/herdix_server.png";
+import boldbyalt from "../assets/projects/boldbyalt.png";
+import activ8 from "../assets/projects/activ8.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { MdArrowOutward } from "react-icons/md";
@@ -52,7 +54,25 @@ const Projects = () => {
       photo: wealthy_elephant,
     },
     {
-      title: "HERDIX",
+      title: "Activ8",
+      description:
+        "A collaborative subscription management platform that enables businesses to create and manage shared subscription plans, allowing teams to access bundled services under a single membership",
+      technologies: ["React JS", "Redux", "Ant Design", "RTK Query", "Axios"],
+      live_url: "https://activ8.ng",
+      github_url: null,
+      photo: activ8,
+    },
+    {
+      title: "BOLD BY ALT",
+      description:
+        "A comprehensive business management platform that empowers entrepreneurs to streamline operations, manage client relationships, generate professional invoices, and gain valuable business insights through powerful analytics, all within a unified dashboard",
+      technologies: ["React JS", "Redux", "Paystack Integration", "Chakra UI"],
+      live_url: "https://boldbyalt.ng",
+      github_url: null,
+      photo: boldbyalt,
+    },
+    {
+      title: "HERDIX API",
       description:
         "Herdix is a comprehensive farm management system that streamlines agricultural operations, including livestock tracking, crop management, and task coordination",
       technologies: [
