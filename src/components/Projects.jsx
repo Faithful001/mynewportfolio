@@ -63,15 +63,15 @@ const Projects = () => {
       github_url: null,
       photo: activ8,
     },
-    {
-      title: "BOLD BY ALT",
-      description:
-        "A comprehensive business management platform that empowers entrepreneurs to streamline operations, manage client relationships, generate professional invoices, and gain valuable business insights through powerful analytics, all within a unified dashboard",
-      technologies: ["React JS", "Redux", "Paystack Integration", "Chakra UI"],
-      live_url: "https://boldbyalt.ng",
-      github_url: null,
-      photo: boldbyalt,
-    },
+    // {
+    //   title: "BOLD BY ALT",
+    //   description:
+    //     "A comprehensive business management platform that empowers entrepreneurs to streamline operations, manage client relationships, generate professional invoices, and gain valuable business insights through powerful analytics, all within a unified dashboard",
+    //   technologies: ["React JS", "Redux", "Paystack Integration", "Chakra UI"],
+    //   live_url: "https://boldbyalt.ng",
+    //   github_url: null,
+    //   photo: boldbyalt,
+    // },
     {
       title: "HERDIX API",
       description:
