@@ -12,6 +12,7 @@ import owe_app from "../assets/projects/owe-app.png";
 import wealthy_elephant from "../assets/projects/wealthy_elephant.png";
 import fourgeehub from "../assets/projects/4geehub.png";
 import fundify from "../assets/projects/fundify.png";
+import herdix_server from "../assets/projects/herdix_server.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { MdArrowOutward } from "react-icons/md";
@@ -49,6 +50,21 @@ const Projects = () => {
       live_url: "https://www.wealthyelephant.com",
       github_url: null,
       photo: wealthy_elephant,
+    },
+    {
+      title: "HERDIX",
+      description:
+        "Herdix is a comprehensive farm management system that streamlines agricultural operations, including livestock tracking, crop management, and task coordination",
+      technologies: [
+        "Nest JS",
+        "BullMQ",
+        "Redis",
+        "Google GenAI",
+        "Hugging Face",
+      ],
+      live_url: "https://herdix-server.pxxl.click/docs",
+      github_url: "https://github.com/Faithful001/herdix-server",
+      photo: herdix_server,
     },
     {
       title: "FUNDIFY",
