@@ -63,6 +63,7 @@ const Projects = () => {
       github_url: null,
       photo: activ8,
     },
+
     // {
     //   title: "BOLD BY ALT",
     //   description:
@@ -88,15 +89,6 @@ const Projects = () => {
       photo: herdix_server,
     },
     {
-      title: "FUNDIFY",
-      description:
-        "A decentralized crowdfunding platform built on Ethereum (Sepolia Testnet) that enables trustless fundraising through cryptocurrency contributions",
-      technologies: ["Solidity", "Next JS", "Third Web", "Cloudinary"],
-      live_url: "https://funddifyy.vercel.app/",
-      github_url: "https://github.com/Faithful001/fundify-app",
-      photo: fundify,
-    },
-    {
       title: "OWE APP",
       description:
         "Owe is your Yoruba learning assistant. Level up your Yoruba, with every proverb. Yoruba wisdom, at your fingertips!",
@@ -111,6 +103,16 @@ const Projects = () => {
       github_url: null,
       photo: owe_app,
     },
+    {
+      title: "FUNDIFY",
+      description:
+        "A decentralized crowdfunding platform built on Ethereum (Sepolia Testnet) that enables trustless fundraising through cryptocurrency contributions",
+      technologies: ["Solidity", "Next JS", "Third Web", "Cloudinary"],
+      live_url: "https://funddifyy.vercel.app/",
+      github_url: "https://github.com/Faithful001/fundify-app",
+      photo: fundify,
+    },
+
     {
       title: "MEALSTAER",
       description:
