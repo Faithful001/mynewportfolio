@@ -25,7 +25,7 @@ const Hero = () => {
           </p>
           <div className="mt-5">
             <a
-              href="https://drive.google.com/file/d/1kOstJdfh7L9dkhazr7pZ0CAEuWL0aadC/view?usp=sharing"
+              href="https://drive.google.com/file/d/1w7yjq_LVmIsi7BgDRVh-FdpGAuvKbooP/view?usp=sharing"
               //   download
               target="_blank"
               rel="noopener noreferrer"
