@@ -224,7 +224,7 @@ const Projects = () => {
                 }}
                 fill
                 // className="object-cover project-image opacity-40 hover:opacity-80 transition-all duration-500 max-w-[480px] w-full rounded-lg"
-                className="object-cover transition-all duration-500 project-image opacity-40 hover:opacity-80"
+                className="object-cover transition-all duration-500 scale-100 project-image hover:scale-110"
                 src={project.photo}
                 alt=""
               />
