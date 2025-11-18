@@ -1,4 +1,5 @@
 import About from "../components/About";
+import CalCom from "../components/CalCom";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -8,13 +9,14 @@ import Services from "../components/Services";
 
 const Body = () => {
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="flex flex-col items-center w-full">
       <Header />
       <Hero />
       <About />
       <Services />
       <Projects />
       <Contact />
+      <CalCom />
       {/* <Footer /> */}
     </div>
   );
