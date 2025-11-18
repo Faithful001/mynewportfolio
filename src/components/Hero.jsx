@@ -10,12 +10,7 @@ const Hero = () => {
     >
       {/* <div className="section "> */}
       <div className="flex flex-col items-center justify-between w-full section md:flex-row">
-        {/* image & content */}
-        {/* text */}
         <div className="text-white">
-          {/* <h6 className="mt-12 -mb-2 text-xl opacity-80">
-            Hello there. My name is
-          </h6> */}
           <h1 className="md:leading-[70px] leading-[50px] my-4 md:text-[64px] text-[50px] text-[#1B99F7] font-bold">
             Innovative Software <br /> Engineer.
           </h1>
