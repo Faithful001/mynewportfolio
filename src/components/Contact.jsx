@@ -106,7 +106,7 @@ const Contact = () => {
             </a> */}
             <a
               className="ml-4"
-              href="https://x.com/faromtheedev"
+              href="https://x.com/0xkingfaithful"
               target="_blank"
               rel="noreferrer"
             >
