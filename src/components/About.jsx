@@ -46,6 +46,8 @@ const About = () => {
     { image: springboot, text: "Spring Boot" },
     { image: golang, text: "Golang" },
     { image: python, text: "Python" },
+    { image: php, text: "PHP" },
+    { image: laravel, text: "Laravel" },
     { image: linux, text: "Linux" },
     { image: git, text: "Git" },
   ];
