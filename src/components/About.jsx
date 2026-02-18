@@ -16,8 +16,8 @@ import nodejs from "../assets/portfolio-pngs/nodejs.png";
 import python from "../assets/portfolio-pngs/python.png";
 import linux from "../assets/portfolio-pngs/linux.png";
 import git from "../assets/portfolio-pngs/git.png";
-import php from "../assets/portfolio-pngs/php.png";
-import laravel from "../assets/portfolio-pngs/laravel.png";
+// import php from "../assets/portfolio-pngs/php.png";
+// import laravel from "../assets/portfolio-pngs/laravel.png";
 import golang from "../assets/portfolio-pngs/golang.png";
 import nextjs from "../assets/portfolio-pngs/nextjs.png";
 import ethersjs from "../assets/portfolio-pngs/ethers.png";
@@ -46,8 +46,8 @@ const About = () => {
     { image: springboot, text: "Spring Boot" },
     { image: golang, text: "Golang" },
     { image: python, text: "Python" },
-    { image: php, text: "PHP" },
-    { image: laravel, text: "Laravel" },
+    // { image: php, text: "PHP" },
+    // { image: laravel, text: "Laravel" },
     { image: linux, text: "Linux" },
     { image: git, text: "Git" },
   ];
